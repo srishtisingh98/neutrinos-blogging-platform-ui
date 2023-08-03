@@ -1,0 +1,86 @@
+[
+    {
+        "id": "sd_T4AGcBygbOez6TYH",
+        "type": "tab",
+        "createdDate": "2023-08-02T22:25:23.995Z",
+        "label": "latest_blogs",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "latest_blogsComponent"
+    },
+    {
+        "id": "sd_m3RLj6RHwDCE9gyY",
+        "type": "OnInit",
+        "z": "sd_T4AGcBygbOez6TYH",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_m3RLj6RHwDCE9gyY",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_NEmPJzzMCwwHKQHf"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "latest_blogsComponent"
+    },
+    {
+        "id": "sd_NEmPJzzMCwwHKQHf",
+        "type": "PageVariables",
+        "z": "sd_T4AGcBygbOez6TYH",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "latestcard",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": ""
+                }
+            }
+        ],
+        "functionName": "sd_NEmPJzzMCwwHKQHf",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            [
+                "sd_Xs03P3ssdIT0ib1y"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "latest_blogsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_Xs03P3ssdIT0ib1y",
+        "type": "Script",
+        "z": "sd_T4AGcBygbOez6TYH",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.latestcard = new Array(4);",
+        "functionName": "sd_Xs03P3ssdIT0ib1y",
+        "category": "Function",
+        "x": 340,
+        "y": 60,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "latest_blogsComponent",
+        "generated": true
+    }
+]

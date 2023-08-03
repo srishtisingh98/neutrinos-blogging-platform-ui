@@ -1,0 +1,86 @@
+[
+    {
+        "id": "sd_hZUHF4Z19Xm0qjqE",
+        "type": "tab",
+        "createdDate": "2023-08-02T20:12:00.140Z",
+        "label": "dashboard",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "dashboardComponent"
+    },
+    {
+        "id": "sd_FCZ7FpfT783pKTVQ",
+        "type": "OnInit",
+        "z": "sd_hZUHF4Z19Xm0qjqE",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_FCZ7FpfT783pKTVQ",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_ww3tAyD8A2TLCZm2"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "dashboardComponent"
+    },
+    {
+        "id": "sd_ww3tAyD8A2TLCZm2",
+        "type": "PageVariables",
+        "z": "sd_hZUHF4Z19Xm0qjqE",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "login",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "true"
+                }
+            }
+        ],
+        "functionName": "sd_ww3tAyD8A2TLCZm2",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            [
+                "sd_KaIdJLV5QU27V6gu"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "dashboardComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_KaIdJLV5QU27V6gu",
+        "type": "Script",
+        "z": "sd_hZUHF4Z19Xm0qjqE",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.login = !page.login;",
+        "functionName": "sd_KaIdJLV5QU27V6gu",
+        "category": "Function",
+        "x": 360,
+        "y": 60,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "dashboardComponent",
+        "generated": true
+    }
+]

@@ -1,0 +1,27 @@
+{
+    "classes": [
+        "width-100",
+        "height-100",
+        "width-50",
+        "mt-20",
+        "mt-5",
+        "navbar",
+        "nav-logo",
+        "vertical-line",
+        "nav-menu-item",
+        "nav-menu-actions",
+        "main-wrapper",
+        "welcome",
+        "welcomeline1",
+        "welcomeline2",
+        "welcomeline3",
+        "red",
+        "ad-img-box",
+        "advertise-content",
+        "card",
+        "card-img-box",
+        "card-heading",
+        "social-interactions",
+        "side-headings"
+    ]
+}
