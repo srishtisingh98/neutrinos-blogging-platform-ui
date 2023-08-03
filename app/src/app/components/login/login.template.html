@@ -1,0 +1,38 @@
+<div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true">
+  <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+      <form [formGroup]="page.loginform">
+        <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true">
+          <h2 class="login-header">
+            Login</h2>
+        </div>
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+          <mat-form-field color="primary" class="margin-sides-20 width-100" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+            <input matInput type="text" placeholder="Username" [required]="true" formControlName="username">
+            <mat-label>Username</mat-label>
+          </mat-form-field>
+        </div>
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+          <mat-form-field color="primary" class="width-100 margin-sides-20" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+            <input matInput type="password" placeholder="Password" [required]="true" formControlName="password">
+            <mat-label>Password</mat-label>
+          </mat-form-field>
+        </div>
+        <div fxLayout="row wrap" class="margin-sides-20" fxLayoutAlign="end stretch" [fxShow]="true">
+          <div class="login-page-text">
+            Forgot your&#xA0;<a href class="forgotpwd" (click)="forgetpwd()">password</a>?</div>
+        </div>
+        <div fxLayout="row wrap" class="mt-20" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button class="login-btn" (click)="login()" type="submit">Login</button></div>
+        <div fxLayout="row wrap" class="mt-20" fxLayoutAlign="center stretch" [fxShow]="true">
+          <div class="login-page-text">
+            New to blogging?&#xA0;<a href class="forgotpwd" (click)="toregister()">Sign Up</a></div>
+        </div>
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+          <div class="login-page-text">
+            <br>By continuing, you are setting up a Blogging account <br> &amp; agree to our <a href class="login-text-deco">User Agreement</a> and <a href class="login-text-deco">Privacy Policy</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

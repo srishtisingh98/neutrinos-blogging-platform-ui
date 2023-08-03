@@ -1,0 +1,16 @@
+<header class="height-40 header-bg width-100">
+  <div fxLayout="row wrap" fxLayoutAlign="end center" [fxShow]="true">
+    <h2 style="left:0px;position:absolute;padding-left:15px;">
+      Blogging Platform</h2>
+    <div fxLayout="column wrap" style="padding-top:15px;" class="ml-5pc mr-2pc" fxLayoutAlign="center center" [fxShow]="true">
+      <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+        <input matInput type="search" placeholder="Search blog" [required]="false">
+        <mat-label>Search blog</mat-label>
+      </mat-form-field>
+    </div><img imgSrc="Web/Icons/plus-icon.svg" class="profile-img cursor"><img imgSrc="Web/Icons/notification-bell.svg" class="ml-3pc cursor">
+    <div fxLayout="column wrap" class="width-5pc mr-2pc profile-img cursor ml-3pc" fxLayoutAlign="start stretch" [fxShow]="true">
+      <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true"><img imgSrc="Web/Icons/user-icon.png" (click)="userprofile()" class="ml-3pc mr-2pc cursor profile-img"><span *ngIf="page.showuseractions?true:false" style="position:relative; " class="profile-icon-bg mt-10">
+                <a href style="text-decoration:none; color: white;">YourPosts</a><br><br><a href routerLink="/login" style="text-decoration:none; color: white;">LogOut</a></span></div>
+    </div>
+  </div>
+</header>

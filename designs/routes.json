@@ -5,6 +5,30 @@
             "component": "dashboardComponent"
         },
         {
+            "path": "user-home",
+            "component": "HomeComponent"
+        },
+        {
+            "path": "login",
+            "component": "loginComponent"
+        },
+        {
+            "path": "fotgetpassword",
+            "component": "Forget_passwordComponent"
+        },
+        {
+            "path": "registration",
+            "component": "RegistrationComponent"
+        },
+        {
+            "path": "footer",
+            "component": "FooterComponent"
+        },
+        {
+            "path": "test",
+            "component": "testComponent"
+        },
+        {
             "path": "''",
             "redirectTo": "dashboard",
             "pathMatch": "full",

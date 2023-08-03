@@ -1,0 +1,358 @@
+[
+    {
+        "id": "sd_wk2wdg3SYUht4eNt",
+        "type": "tab",
+        "createdDate": "2023-08-03T13:19:13.675Z",
+        "label": "Registration",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "RegistrationComponent"
+    },
+    {
+        "id": "sd_qfq1m4a485GCQvRF",
+        "type": "OnInit",
+        "z": "sd_wk2wdg3SYUht4eNt",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_qfq1m4a485GCQvRF",
+        "category": "Lifecycle Events",
+        "x": 245,
+        "y": 60,
+        "wires": [
+            [
+                "sd_ea1oZMxUS9z4opd5"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "RegistrationComponent"
+    },
+    {
+        "id": "sd_ea1oZMxUS9z4opd5",
+        "type": "PageVariables",
+        "z": "sd_wk2wdg3SYUht4eNt",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_ea1oZMxUS9z4opd5",
+        "category": "Function",
+        "x": 395,
+        "y": 60,
+        "wires": [
+            [
+                "sd_KFvQdrQ1ekCxpm8K"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "RegistrationComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_Sql8QRqgcwdnG3W7",
+        "type": "PageStart",
+        "z": "sd_wk2wdg3SYUht4eNt",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "tologin",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "tologin",
+        "category": "General",
+        "x": 125,
+        "y": 300,
+        "wires": [
+            [
+                "sd_lMNkVQQ3Z5HgYFy4"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "RegistrationComponent"
+    },
+    {
+        "id": "sd_lMNkVQQ3Z5HgYFy4",
+        "type": "OpenDialog",
+        "z": "sd_wk2wdg3SYUht4eNt",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 4,
+        "flow": {
+            "flowId": "sd_MUxF7WJ8mrRyfsbP",
+            "label": "login"
+        },
+        "relativePath": "app/components/login/login",
+        "data": "this.page",
+        "ariaDescribedBy": "this.page",
+        "ariaLabel": "this.page",
+        "ariaLabelledBy": "this.page",
+        "autoFocus": false,
+        "backdropClass": "this.page",
+        "closeOnNavigation": "this.page",
+        "direction": "this.page",
+        "disableClose": false,
+        "hasBackdrop": "this.page",
+        "height": "this.page",
+        "maxHeight": "this.page",
+        "minHeight": "\"500px\"",
+        "width": "this.page",
+        "maxWidth": "\"400px\"",
+        "minWidth": "this.page",
+        "panelClass": "this.page",
+        "position": "this.page",
+        "restoreFocus": "this.page",
+        "role": "this.page",
+        "resultMapping": "bh.response1",
+        "functionName": "sd_lMNkVQQ3Z5HgYFy4",
+        "category": "Dialog",
+        "x": 225,
+        "y": 300,
+        "wires": [
+            [],
+            [],
+            [],
+            []
+        ],
+        "__ssdTypeInputs__": {
+            "data": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "ariaDescribedBy": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "ariaLabel": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "ariaLabelledBy": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "autoFocus": {
+                "type": "bool",
+                "value": "false",
+                "constant": false
+            },
+            "backdropClass": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "closeOnNavigation": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "direction": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "disableClose": {
+                "type": "bool",
+                "value": "false",
+                "constant": false
+            },
+            "hasBackdrop": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "height": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "maxHeight": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "minHeight": {
+                "type": "str",
+                "value": "500px",
+                "constant": false
+            },
+            "width": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "maxWidth": {
+                "type": "str",
+                "value": "400px",
+                "constant": false
+            },
+            "minWidth": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "panelClass": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "position": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "restoreFocus": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "role": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "resultMapping": {
+                "type": "bh",
+                "value": "response1",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "RegistrationComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_66o2PM8dOxuaOi6S",
+        "type": "Script",
+        "z": "sd_wk2wdg3SYUht4eNt",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.registrationform = page.fb.group({\n    username:[''],\n    useremail:[''],\n    password:['']\n})",
+        "functionName": "sd_66o2PM8dOxuaOi6S",
+        "category": "Function",
+        "x": 625,
+        "y": 60,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "RegistrationComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_KFvQdrQ1ekCxpm8K",
+        "type": "UseDependency",
+        "z": "sd_wk2wdg3SYUht4eNt",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "",
+        "propertyType": "bh",
+        "propertyGv": "bh.",
+        "alias": "",
+        "modules": [
+            {
+                "textIp": "FormGroup",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": ""
+                },
+                "injectable": false
+            },
+            {
+                "textIp": "FormControl",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": ""
+                },
+                "injectable": false
+            },
+            {
+                "textIp": "FormBuilder",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "fb"
+                },
+                "injectable": true
+            }
+        ],
+        "import_all": false,
+        "library": "@angular/forms",
+        "serviceDesignerType": "pages",
+        "functionName": "sd_KFvQdrQ1ekCxpm8K",
+        "category": "Function",
+        "x": 520,
+        "y": 59,
+        "wires": [
+            [
+                "sd_66o2PM8dOxuaOi6S"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "RegistrationComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_eUipuPXyn9umJ1SC",
+        "type": "PageStart",
+        "z": "sd_wk2wdg3SYUht4eNt",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "onregister",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "onregister",
+        "category": "General",
+        "x": 525,
+        "y": 180,
+        "wires": [
+            [
+                "sd_a9USWxScj1PDKj0d"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "RegistrationComponent"
+    },
+    {
+        "id": "sd_a9USWxScj1PDKj0d",
+        "type": "Script",
+        "z": "sd_wk2wdg3SYUht4eNt",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(page.registrationform.value)",
+        "functionName": "sd_a9USWxScj1PDKj0d",
+        "category": "Function",
+        "x": 640,
+        "y": 180,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "RegistrationComponent",
+        "generated": true
+    }
+]

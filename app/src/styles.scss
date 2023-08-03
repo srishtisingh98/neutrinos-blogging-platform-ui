@@ -140,3 +140,175 @@ background-color: white;
 bh-latest_blogs{
     width: 100%;
 }
+
+/*-------------------------------------------------------------------------------------------*/
+$light-blue:#0079d3;
+
+.padding-20{
+    padding: 20px 20px;
+}
+
+.margin-20{
+    margin: 20px 20px;
+}
+.margin-sides-20{
+    margin: 0px 20px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.ml-20{
+    margin-left: 28px;
+}
+.mr-2pc{
+    margin-right: 2%;
+}
+.ml-3pc{
+    margin-left: 3%;
+}
+
+.ml-5pc{
+    margin-left: 5%;
+}
+
+.ml-20pc{
+    margin-left: 70%;
+}
+.ml35pc{
+    margin-left: 35%;
+}
+
+.padding-20{
+    padding: 20px 20px;
+   
+}
+.cursor{
+    cursor: pointer;
+}
+
+.text-black{
+    color: black;
+}
+
+
+.header-bg{
+    // background-color:  #d93a00;
+    // background-color: crimson;
+    // background-color: rgba(226, 66, 98, 0.842);
+       background-color: gray;
+    // color: white;
+    // padding-top:3px ;
+    // padding-bottom:3px;
+    // padding-left:5px ;
+    // padding-right: 5px;
+}
+// .height-40{
+//     height: 60px;
+// }
+
+
+.profile-icon-bg{
+    // background-color: rgba(226, 66, 98, 0.842);
+    background-color: grey;
+    padding: 10px 5px;
+}
+.profile-img{
+    width: 40px;
+    height: 40px;
+}
+.bg-grey{
+    background-color: gainsboro;
+    border-radius: 10px;
+    width: fit-content;
+    height: 75px;
+}
+
+.login-text-deco{
+    text-decoration: none;
+    color: #0079d3;
+}
+
+.login-btn,.reset-pwd-btn{
+    background: #d93a00;
+    border-radius: 999px;
+    color: #fff;
+    margin: 0px 20px;
+    width: 100%;
+    // width: 205px;
+}
+.login-page-text{
+    font-family: Noto Sans,sans-serif;
+    font-size: 13px;
+    letter-spacing: unset;
+    line-height: 16px;
+    // margin-bottom: 0;
+    // margin-top: 16px;
+}
+.login-header{
+    font-family: IBMPlexSans, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 280px;
+    text-transform: none;
+}
+
+.forget-pwd-text{
+    color: rgb(26, 26, 27);
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.forget-pwd-title{
+    font-family: IBMPlexSans, sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 24px;
+    // max-width: 280px;
+    text-transform: none;
+}
+.width-100{
+    width: 100%;
+}
+.width-99{
+    width: 99%;
+}
+
+.width-5pc{
+    width: 5%;
+}
+.width-10pc{
+    width: 30%;
+}
+.mt-20{
+    margin-top: 20px;
+}
+
+.forgotpwd{
+    color: $light-blue;
+}
+
+.pb-10{
+    padding-bottom: 30px;
+}
+
+.footer-bg{
+    // background-color: rgba(226, 66, 98, 0.842);
+    background-color: grey;
+}
+
+.blogging-logo{
+    width:200px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.footer-text{
+    color: rgb(26, 26, 27);
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}

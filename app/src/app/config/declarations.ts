@@ -15,6 +15,18 @@ window['neutrinos'] = {
 };
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-testComponent
+import { testComponent } from '../components/test/test.component';
+//CORE_REFERENCE_IMPORT-FooterComponent
+import { FooterComponent } from '../components/Footer/Footer.component';
+//CORE_REFERENCE_IMPORT-HomeComponent
+import { HomeComponent } from '../components/Home/Home.component';
+//CORE_REFERENCE_IMPORT-RegistrationComponent
+import { RegistrationComponent } from '../components/Registration/Registration.component';
+//CORE_REFERENCE_IMPORT-Forget_passwordComponent
+import { Forget_passwordComponent } from '../components/Forget_password/Forget_password.component';
+//CORE_REFERENCE_IMPORT-loginComponent
+import { loginComponent } from '../components/login/login.component';
 //CORE_REFERENCE_IMPORT-latest_blogsComponent
 import { latest_blogsComponent } from '../components/latestBlogs/latest_blogs.component';
 //CORE_REFERENCE_IMPORT-dashboardComponent
@@ -51,6 +63,18 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-testComponent
+  testComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-FooterComponent
+  FooterComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-HomeComponent
+  HomeComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-RegistrationComponent
+  RegistrationComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-Forget_passwordComponent
+  Forget_passwordComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-loginComponent
+  loginComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-latest_blogsComponent
   latest_blogsComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-dashboardComponent
@@ -81,6 +105,12 @@ export const appProviders = [
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [
   { path: 'dashboard', component: dashboardComponent },
+  { path: 'user-home', component: HomeComponent },
+  { path: 'login', component: loginComponent },
+  { path: 'fotgetpassword', component: Forget_passwordComponent },
+  { path: 'registration', component: RegistrationComponent },
+  { path: 'footer', component: FooterComponent },
+  { path: 'test', component: testComponent },
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
