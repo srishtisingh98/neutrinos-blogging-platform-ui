@@ -166,7 +166,13 @@ bh-latest_blogs{
      max-height: 350px;
   text-align: center;
 }
-.must-readcard-img-box img{}
+.must-readcard-img-box img{
+      height: 100%; 
+  width: 100%; 
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  border-radius: 15px;
+}
 //blogpage}
 .card-img-box1{
      max-height: 350px;
@@ -177,7 +183,6 @@ bh-latest_blogs{
   width: 100%; 
   aspect-ratio: 3/2;
   object-fit: cover;
-  border-radius: 15px;
 }
 
 /*-------------------------------------------------------------------------------------------*/

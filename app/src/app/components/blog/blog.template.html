@@ -23,7 +23,7 @@
       <div fxLayout="row wrap" class="commentbox width-100" fxLayoutAlign="start stretch" [fxShow]="true">
         <div fxLayout="row wrap" class="commentlist width-100" fxLayoutAlign="start stretch" [fxShow]="true" *ngFor="let comments of page.postcomment">
           <div class="commentitem">
-            {{comments}}
+            {{comments.username}}<br>{{comments.comment_text}}
           </div>
         </div>
         <div fxLayout="row wrap" style="position:relative;" class="width-100" fxLayoutAlign="start stretch" [fxShow]="true"><mat-form-field class="commentarea width-100" [floatLabel]="&apos;auto&apos;">

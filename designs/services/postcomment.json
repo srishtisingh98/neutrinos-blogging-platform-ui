@@ -1,0 +1,127 @@
+[
+    {
+        "id": "sd_Q0VpAL9RjhndXo1w",
+        "type": "tab",
+        "createdDate": "2023-08-07T18:16:53.665Z",
+        "label": "postcomment",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "tabType": "client",
+        "generateNext": true,
+        "serviceName": "postcomment",
+        "relativeParentPath": ""
+    },
+    {
+        "id": "sd_ZUffoNFpiKGfXVbk",
+        "type": "HttpRequest",
+        "z": "sd_Q0VpAL9RjhndXo1w",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "post",
+        "methodMappingObj": {},
+        "urlMapping": "bh.url",
+        "urlMappingObj": {
+            "mapVarType": "bh",
+            "mapVarValue": "url"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBody": "bh.input.body",
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": "body"
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "functionName": "sd_ZUffoNFpiKGfXVbk",
+        "category": "HTTP",
+        "x": 425,
+        "y": 200,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "postcomment",
+        "generated": true
+    },
+    {
+        "id": "sd_qeeJEPW6eOl2uXkE",
+        "type": "Start",
+        "z": "sd_Q0VpAL9RjhndXo1w",
+        "viewType": "client-server",
+        "nodeType": "start",
+        "name": "",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "body",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "accept_bh": false,
+        "functionName": "sd_qeeJEPW6eOl2uXkE",
+        "category": "General",
+        "x": 120,
+        "y": 200,
+        "wires": [
+            [
+                "sd_jpoVdIvtXFWGutSF"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "postcomment"
+    },
+    {
+        "id": "sd_jpoVdIvtXFWGutSF",
+        "type": "Script",
+        "z": "sd_Q0VpAL9RjhndXo1w",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(bh.input.body);\nconsole.log(bh.local.body);\nbh.url = 'http://localhost:8081/api/post_comment';",
+        "functionName": "sd_jpoVdIvtXFWGutSF",
+        "category": "Function",
+        "x": 265,
+        "y": 200,
+        "wires": [
+            [
+                "sd_ZUffoNFpiKGfXVbk"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "postcomment",
+        "generated": true
+    }
+]
