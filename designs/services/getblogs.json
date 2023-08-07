@@ -1,0 +1,127 @@
+[
+    {
+        "id": "sd_h0Y6QWfeblUGDOXH",
+        "type": "tab",
+        "createdDate": "2023-08-07T21:19:28.521Z",
+        "label": "getblogs",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "tabType": "client",
+        "generateNext": true,
+        "serviceName": "getblogs",
+        "relativeParentPath": ""
+    },
+    {
+        "id": "sd_VuG62A5wMH0xEWwr",
+        "type": "Start",
+        "z": "sd_h0Y6QWfeblUGDOXH",
+        "viewType": "client-server",
+        "nodeType": "start",
+        "name": "",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "body",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "accept_bh": false,
+        "functionName": "sd_VuG62A5wMH0xEWwr",
+        "category": "General",
+        "x": 120,
+        "y": 120,
+        "wires": [
+            [
+                "sd_obyZtfyeDtNj36Kb"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "getblogs"
+    },
+    {
+        "id": "sd_obyZtfyeDtNj36Kb",
+        "type": "Script",
+        "z": "sd_h0Y6QWfeblUGDOXH",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.url = 'http://localhost:8081/api/get-post';",
+        "functionName": "sd_obyZtfyeDtNj36Kb",
+        "category": "Function",
+        "x": 300,
+        "y": 120,
+        "wires": [
+            [
+                "sd_DcnpPHcxDyNNMbIe"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "getblogs",
+        "generated": true
+    },
+    {
+        "id": "sd_DcnpPHcxDyNNMbIe",
+        "type": "HttpRequest",
+        "z": "sd_h0Y6QWfeblUGDOXH",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "bh.url",
+        "urlMappingObj": {
+            "mapVarType": "bh",
+            "mapVarValue": "url"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBody": "bh.input.body",
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": "body"
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "functionName": "sd_DcnpPHcxDyNNMbIe",
+        "category": "HTTP",
+        "x": 520,
+        "y": 120,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "getblogs",
+        "generated": true
+    }
+]

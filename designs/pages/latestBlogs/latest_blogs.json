@@ -55,7 +55,7 @@
         "y": 30,
         "wires": [
             [
-                "sd_Xs03P3ssdIT0ib1y"
+                "sd_cloGiasKlYvQ8ELz"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -70,10 +70,10 @@
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "page.latestcard = new Array(4);",
+        "script": "page.latestcard = bh.input.result",
         "functionName": "sd_Xs03P3ssdIT0ib1y",
         "category": "Function",
-        "x": 340,
+        "x": 425,
         "y": 60,
         "wires": [
             []
@@ -200,6 +200,12 @@
         "nodeType": "flow",
         "name": "",
         "path": "/blog",
+        "pathMap": "",
+        "pathparams": "",
+        "pathparamsMap": "",
+        "qparams": "",
+        "qparamsMap": "",
+        "qparamsArray": "",
         "resultMapping": {
             "type": "bh",
             "value": "response"
@@ -231,6 +237,69 @@
         "wires": [
             [
                 "sd_7UhfCT3KHMLFNRoq"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "latest_blogsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_cloGiasKlYvQ8ELz",
+        "type": "PageCallService",
+        "z": "sd_T4AGcBygbOez6TYH",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_h0Y6QWfeblUGDOXH",
+            "type": "tab",
+            "createdDate": "2023-08-07T21:19:28.521Z",
+            "label": "getblogs",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0,
+            "tabType": "client"
+        },
+        "flow": {
+            "flowId": "sd_VuG62A5wMH0xEWwr",
+            "flowName": "sd_VuG62A5wMH0xEWwr"
+        },
+        "inputVariables": [
+            {
+                "key": "body",
+                "map": true,
+                "valueType": "bh.local",
+                "value": "body"
+            }
+        ],
+        "outputMapping": [
+            {
+                "mapVarType": "local",
+                "key": "result",
+                "valueType": "bh.input",
+                "value": "result",
+                "mapVarName": "result",
+                "localVar": "bh.input.result"
+            }
+        ],
+        "serviceImportPath": "app/sd-services/getblogs",
+        "startName": "sd_VuG62A5wMH0xEWwr",
+        "inputParams": [
+            "bh.local.body"
+        ],
+        "accept_bh": false,
+        "accept_csd": true,
+        "functionName": "sd_cloGiasKlYvQ8ELz",
+        "category": "General",
+        "x": 305,
+        "y": 60,
+        "wires": [
+            [
+                "sd_Xs03P3ssdIT0ib1y"
             ]
         ],
         "__n_excludedFromValidation__": {},

@@ -1,5 +1,6 @@
 //append_imports_start
 
+import * as sd_h0Y6QWfeblUGDOXH from 'app/sd-services/getblogs'; //_splitter_
 import * as sd_bQraSewXQvLInwkN from 'app/sd-services/getcomments'; //_splitter_
 import * as sd_Q0VpAL9RjhndXo1w from 'app/sd-services/postcomment'; //_splitter_
 import { Injectable } from '@angular/core'; //_splitter_
@@ -7,6 +8,7 @@ import { Injectable } from '@angular/core'; //_splitter_
 @Injectable({ providedIn: 'root' })
 export class __NEU_ServiceInvokerService__ {
   constructor(
+    private sd_h0Y6QWfeblUGDOXH: sd_h0Y6QWfeblUGDOXH.getblogs,
     private sd_bQraSewXQvLInwkN: sd_bQraSewXQvLInwkN.getcomments,
     private sd_Q0VpAL9RjhndXo1w: sd_Q0VpAL9RjhndXo1w.postcomment
   ) {}
