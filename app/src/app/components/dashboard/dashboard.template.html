@@ -1,0 +1,66 @@
+<div fxLayout="column wrap" class="height-100 width-100" fxLayoutAlign="start center" [fxShow]="true">
+  <div fxLayout="row wrap" class="width-100" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column wrap" class="width-100" fxLayoutAlign="start stretch" [fxShow]="true"><mat-toolbar class="navbar">
+        <div fxLayout="row wrap" class="height-100 width-100" fxLayoutAlign="space-between center" [fxShow]="true">
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+              <div class="nav-logo">
+                BLOGGING</div>
+              <div class="vertical-line">
+              </div>
+              <div class="nav-menu-item">
+                Stories</div>
+              <div class="nav-menu-item">
+                Creator</div>
+              <div class="nav-menu-item">
+                Community</div>
+              <div class="nav-menu-item">
+                Subscribe</div>
+            </div>
+          </div>
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+            <div fxLayout="row wrap" fxLayoutAlign="space-around center" [fxShow]="true"><mat-icon class="nav-menu-actions">notes</mat-icon><mat-icon class="nav-menu-actions">notifications</mat-icon><mat-icon class="nav-menu-actions" *ngIf="!page.login">person</mat-icon><button mat-raised-button class="nav-menu-actions" *ngIf="page.login" (click)="login()">Login</button></div>
+          </div>
+        </div>
+      </mat-toolbar></div>
+    <div fxLayout="column wrap" class="width-100 main-wrapper" fxLayoutAlign="start stretch" [fxShow]="true">
+      <div fxLayout="row wrap" class="width-100" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="column wrap" class="width-100 welcome" fxLayoutAlign="space-around center" [fxShow]="true">
+          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+            <div class="welcomeline1">
+              Welcome to Blogging</div>
+          </div>
+          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+            <div class="welcomeline2">
+              Craft narratives that ignite <span class="red">inspiration</span>,</div>
+          </div>
+          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+            <div class="welcomeline3">
+              <span class="red">Knowledge</span> and <span class="red">entertainment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div fxLayout="row wrap" class="width-100" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="row wrap" class="advertise-card width-100" fxLayoutAlign="start stretch" [fxShow]="true">
+          <div fxLayout="column wrap" class="ad-img-box width-50" fxLayoutAlign="start stretch" [fxShow]="true"><img imgSrc="/Web/joh-wick1.jpg" width="100%"></div>
+          <div fxLayout="column wrap" class="advertise-content width-50" fxLayoutAlign="space-around start" [fxShow]="true">
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+              <div>
+                Watch JOHN WICK</div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+              <div>
+                johnwick johnwick johnwick johnwick johnwick johnwick </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+              <div>
+                johnwick johnwick </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div fxLayout="row wrap" class="width-100" fxLayoutAlign="start stretch" [fxShow]="true"><bh-latest_blogs></bh-latest_blogs></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<div fxLayout="column wrap" class="mt-20 height-100" fxLayoutAlign="start stretch" [fxShow]="true">
+  <div fxLayout="row wrap" class="width-100" fxLayoutGap="20px" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column wrap" style="width:30%" fxLayoutAlign="start stretch" [fxShow]="true"></div>
+    <div fxLayout="column wrap" style="width:40%;" class="blogbox" fxLayoutAlign="space-between start" [fxShow]="true">
+      <div fxLayout="row wrap" class="blog-head" fxLayoutGap="5px" fxLayoutAlign="start center" [fxShow]="true"><mat-icon>person</mat-icon><span>
+                User</span><span>
+                3min ago</span></div>
+      <div fxLayout="row wrap" class="card-img-box1 width-100" fxLayoutAlign="start stretch" [fxShow]="true"><img imgSrc="/Web/john-wick.jpg" width="100%"></div>
+      <div fxLayout="row wrap" class="blog-content mt-5 width-100" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div class="card-heading">
+          John Wick is an American neo-noir action thriller </div>
+      </div>
+      <div fxLayout="row wrap" class="social-interactions1 mt-5 width-100" fxLayoutAlign="start center" [fxShow]="true"><mat-icon>thumb_up</mat-icon><mat-icon>tab</mat-icon><mat-icon>share</mat-icon></div>
+      <div fxLayout="row wrap" class="width-100" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div class="width-100">
+          <hr>
+        </div>
+      </div>
+      <div fxLayout="row wrap" class="p-10 width-100" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div class="width-100">
+          Comments</div>
+      </div>
+      <div fxLayout="row wrap" class="commentbox width-100" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="row wrap" class="commentlist width-100" fxLayoutAlign="start stretch" [fxShow]="true" *ngFor="let comments of page.postcomment">
+          <div class="commentitem">
+            {{comments}}
+          </div>
+        </div>
+        <div fxLayout="row wrap" style="position:relative;" class="width-100" fxLayoutAlign="start stretch" [fxShow]="true"><mat-form-field class="commentarea width-100" [floatLabel]="&apos;auto&apos;">
+            <mat-label></mat-label>
+            <textarea matInput [(ngModel)]="page.comment" placeholder="Text Area" [required]="false"></textarea>
+          </mat-form-field><mat-icon class="cmntbtn" (click)="postcmnt()">send</mat-icon></div>
+      </div>
+    </div>
+    <div fxLayout="column wrap" style="width:20%" class="similarblogs" fxLayoutAlign="start start" [fxShow]="true">
+      <div fxLayout="row wrap" class="width-100" fxLayoutAlign="space-around center" [fxShow]="true">
+        <div>
+          Similar </div>
+      </div>
+    </div>
+  </div>
+</div>

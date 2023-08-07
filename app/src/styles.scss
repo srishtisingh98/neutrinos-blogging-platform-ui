@@ -1,0 +1,218 @@
+/*Importing default angular material css theme. */
+
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "nDefaults.scss";
+
+$primary-color :#4BB8E0;
+*{
+     font-family: sans-serif;
+}
+body{
+background-color: white;
+}
+.width-100{
+    width: 100%;
+}
+.height-100{
+    height: 100%;
+}
+.width-50{
+    width: 50%;
+}
+.mt-20{
+    margin-top:20px;
+}
+.mt-5{
+    margin-top: 5px;
+}
+//navbar
+
+.navbar{
+    background-color: white;
+}
+.nav-logo{
+    color: $primary-color;
+}
+.vertical-line {
+    border-left: 2px solid $primary-color; 
+    margin: 3px 20px;
+    padding: 5px 0px;
+}
+.nav-menu-item{
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.nav-menu-actions{
+    margin-right: 25px;
+}
+
+//main
+
+.main-wrapper{
+    padding: 0px 16px;
+}
+
+//welcome
+
+.welcome{
+    margin: 20px 0px;
+    background-color: #e9e9e9;
+    border-radius: 10px;
+    padding: 25px;
+}
+.welcomeline1{
+    font-family: sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+.welcomeline2{
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.welcomeline3{
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+   
+}
+.red{
+    color: red;
+}
+
+//advertise
+
+.ad-img-box{
+    max-height: 350px;
+  text-align: center;
+}
+.ad-img-box img {
+  height: 100%; 
+  width: 100%; 
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.advertise-content{
+    padding: 20px 25px;
+}
+
+//Latest
+
+.card{
+    width: 300px;
+}
+.card-img-box{
+     max-height: 150px;
+  text-align: center;
+}
+.card-img-box img{
+  height: 100%; 
+  width: 100%; 
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.card-heading{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.social-interactions mat-icon {
+  color:$primary-color;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 0px 5px;
+  
+}
+.side-headings{
+    font-size: 26px;
+    font-weight: 600;
+}
+bh-latest_blogs{
+    width: 100%;
+}
+
+//blogpage
+.card-img-box1{
+     max-height: 350px;
+  text-align: center;
+}
+.card-img-box1 img{
+  height: 100%; 
+  width: 100%; 
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+.commentbox{
+    // border: 1px solid $primary-color;
+    padding: 10px;
+    // margin-top: 10px;
+}
+.commentarea{
+    height: 50px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 3px 5px;
+}
+.commentarea .mat-form-field-underline{
+    display: none;
+}
+.cmntbtn{
+  position: absolute; 
+  top: 50%; 
+  left: 95%;
+  transform: translate(-50%, -50%);
+}
+.commentitem{
+    padding: 10px 5px;
+}
+.blogbox{
+    border: 1px solid $primary-color;
+}
+.blog-head{
+padding: 5px;
+}
+.blog-head span:first-child{
+    font-size: 12px;
+}
+.blog-head span{
+    font-size: 9px;
+}
+.blog-content{
+    padding: 5px 10px;
+    max-height: 200px;
+    overflow-y: scroll;
+   
+}
+.blog-content::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.blog-content::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.blog-content::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 0.25em;
+}
+.p-10{
+    padding: 10px;
+}
+.commentlist{
+    background-color: #ececec;
+    margin-bottom: 3px;
+}
+.similarblogs{
+    border: 1px solid black;
+    padding: 10px;
+}
+.social-interactions1{
+background-color: rgb(112, 167, 187);
+border-radius: 25px;
+}

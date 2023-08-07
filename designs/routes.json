@@ -1,0 +1,26 @@
+{
+    "routes": [
+        {
+            "path": "dashboard",
+            "component": "dashboardComponent"
+        },
+        {
+            "path": "allblogs",
+            "component": "all_latestblogsComponent"
+        },
+        {
+            "path": "blog",
+            "component": "blogComponent"
+        },
+        {
+            "path": "''",
+            "redirectTo": "dashboard",
+            "pathMatch": "full",
+            "default": true
+        },
+        {
+            "path": "**",
+            "component": "PageNotFoundComponent"
+        }
+    ]
+}
