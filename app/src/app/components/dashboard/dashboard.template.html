@@ -19,7 +19,7 @@
             </div>
           </div>
           <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-            <div fxLayout="row wrap" fxLayoutAlign="space-around center" [fxShow]="true"><mat-icon class="nav-menu-actions">notes</mat-icon><mat-icon class="nav-menu-actions">notifications</mat-icon><mat-icon class="nav-menu-actions" *ngIf="!page.login">person</mat-icon><button mat-raised-button class="nav-menu-actions" *ngIf="page.login">Login</button></div>
+            <div fxLayout="row wrap" fxLayoutAlign="space-around center" [fxShow]="true"><mat-icon class="nav-menu-actions">notes</mat-icon><mat-icon class="nav-menu-actions">notifications</mat-icon><mat-icon class="nav-menu-actions" *ngIf="!page.login">person</mat-icon><button mat-raised-button class="nav-menu-actions" *ngIf="page.login" (click)="login()">Login</button></div>
           </div>
         </div>
       </mat-toolbar></div>
@@ -61,6 +61,12 @@
         </div>
       </div>
       <div fxLayout="row wrap" class="width-100" fxLayoutAlign="start stretch" [fxShow]="true"><bh-latest_blogs></bh-latest_blogs></div>
+      <div fxLayout="row wrap" class="width-100" fxLayoutAlign="start stretch" [fxShow]="true"><bh-Must_Read></bh-Must_Read></div>
+      <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><bh-Business></bh-Business></div>
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><bh-Sports></bh-Sports></div>
+      </div>
+      <div fxLayout="row wrap" class="width-100" fxLayoutAlign="start stretch" [fxShow]="true"><bh-Footer></bh-Footer></div>
     </div>
   </div>
 </div>

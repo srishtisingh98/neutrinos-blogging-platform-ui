@@ -25,10 +25,18 @@ background-color: white;
 .mt-5{
     margin-top: 5px;
 }
+
+.mt-3pc{
+    margin-top: 3%;
+}
+.mt-5pc{
+    margin-top: 5%;
+}
 //navbar
 
 .navbar{
     background-color: white;
+    
 }
 .nav-logo{
     color: $primary-color;
@@ -121,6 +129,8 @@ background-color: white;
     font-size: 18px;
     font-weight: bold;
 }
+
+
 .social-interactions{
 //     display: flex;
 //   gap: 10px;
@@ -139,6 +149,34 @@ background-color: white;
 }
 bh-latest_blogs{
     width: 100%;
+}
+
+.ml-10{
+    margin-left: 10px;
+}
+.ml-5{
+    margin-left: 5px;
+}
+.business-card{
+    width: 300px;
+}
+.sportcard{
+    width: 300px;
+}
+
+.must-readcard{
+    width: 420px;
+}
+.must-readcard-img-box{
+     max-height: 350px;
+  text-align: center;
+}
+.must-readcard-img-box img{
+  height: 100%; 
+  width: 100%; 
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  border-radius: 15px;
 }
 
 /*-------------------------------------------------------------------------------------------*/
@@ -174,10 +212,18 @@ $light-blue:#0079d3;
 .ml-20pc{
     margin-left: 70%;
 }
+
 .ml35pc{
     margin-left: 35%;
 }
 
+.ml30pc{
+    margin-left: 30%;
+}
+
+.ml-10pc{
+    margin-left: 10%;
+}
 .padding-20{
     padding: 20px 20px;
    
@@ -276,8 +322,8 @@ $light-blue:#0079d3;
     width: 99%;
 }
 
-.width-5pc{
-    width: 5%;
+.width-23pc{
+    width: 23%;
 }
 .width-10pc{
     width: 30%;
@@ -300,15 +346,23 @@ $light-blue:#0079d3;
 }
 
 .blogging-logo{
-    width:200px;
-    height: 70px;
+    width:250px;
+    height: 120px;
     border-radius: 50%;
 }
 
 .footer-text{
-    color: rgb(26, 26, 27);
+    color: rgba(26, 26, 27, 0.637);
     font-family: "Noto Sans", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 500;
     line-height: 16px;
+}
+
+p span .cursor1{
+    cursor: pointer;
+}
+.color-black{
+    color: black;
+    font-weight: 600;
 }

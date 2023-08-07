@@ -1,0 +1,86 @@
+[
+    {
+        "id": "sd_ftBbsvjdKx34aMsy",
+        "type": "tab",
+        "createdDate": "2023-08-04T13:52:30.843Z",
+        "label": "Business",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "BusinessComponent"
+    },
+    {
+        "id": "sd_cma7pdS0ImfsQNgY",
+        "type": "OnInit",
+        "z": "sd_ftBbsvjdKx34aMsy",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_cma7pdS0ImfsQNgY",
+        "category": "Lifecycle Events",
+        "x": 205,
+        "y": 60,
+        "wires": [
+            [
+                "sd_x9PGczWLvJSduf1y"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "BusinessComponent"
+    },
+    {
+        "id": "sd_x9PGczWLvJSduf1y",
+        "type": "PageVariables",
+        "z": "sd_ftBbsvjdKx34aMsy",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "latestcard",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": ""
+                }
+            }
+        ],
+        "functionName": "sd_x9PGczWLvJSduf1y",
+        "category": "Function",
+        "x": 355,
+        "y": 60,
+        "wires": [
+            [
+                "sd_WMM6ATfH6OZIzuS5"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "BusinessComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_WMM6ATfH6OZIzuS5",
+        "type": "Script",
+        "z": "sd_ftBbsvjdKx34aMsy",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.latestcard = new Array(2);",
+        "functionName": "sd_WMM6ATfH6OZIzuS5",
+        "category": "Function",
+        "x": 460,
+        "y": 60,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "BusinessComponent",
+        "generated": true
+    }
+]

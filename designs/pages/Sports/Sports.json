@@ -1,0 +1,86 @@
+[
+    {
+        "id": "sd_KoZEia8uk9qi7uvk",
+        "type": "tab",
+        "createdDate": "2023-08-04T13:57:26.475Z",
+        "label": "Sports",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "SportsComponent"
+    },
+    {
+        "id": "sd_dLpMtu3Nwr8yUobM",
+        "type": "OnInit",
+        "z": "sd_KoZEia8uk9qi7uvk",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_dLpMtu3Nwr8yUobM",
+        "category": "Lifecycle Events",
+        "x": 205,
+        "y": 60,
+        "wires": [
+            [
+                "sd_zG2Y7OAA8gnkB9dm"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "SportsComponent"
+    },
+    {
+        "id": "sd_zG2Y7OAA8gnkB9dm",
+        "type": "PageVariables",
+        "z": "sd_KoZEia8uk9qi7uvk",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "latestcard",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": ""
+                }
+            }
+        ],
+        "functionName": "sd_zG2Y7OAA8gnkB9dm",
+        "category": "Function",
+        "x": 355,
+        "y": 60,
+        "wires": [
+            [
+                "sd_riOxcdRHiJOZgUdd"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "SportsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_riOxcdRHiJOZgUdd",
+        "type": "Script",
+        "z": "sd_KoZEia8uk9qi7uvk",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.latestcard = new Array(2);",
+        "functionName": "sd_riOxcdRHiJOZgUdd",
+        "category": "Function",
+        "x": 495,
+        "y": 70,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "SportsComponent",
+        "generated": true
+    }
+]

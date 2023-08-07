@@ -72,7 +72,7 @@
         "y": 300,
         "wires": [
             [
-                "sd_lMNkVQQ3Z5HgYFy4"
+                "sd_NEzrBXjnTQIPbkTi"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -115,8 +115,8 @@
         "resultMapping": "bh.response1",
         "functionName": "sd_lMNkVQQ3Z5HgYFy4",
         "category": "Dialog",
-        "x": 225,
-        "y": 300,
+        "x": 305,
+        "y": 280,
         "wires": [
             [],
             [],
@@ -348,8 +348,224 @@
         "x": 640,
         "y": 180,
         "wires": [
+            [
+                "sd_4MA8Srlvhqh9QOp5"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "RegistrationComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_NEzrBXjnTQIPbkTi",
+        "type": "CloseDialog",
+        "z": "sd_wk2wdg3SYUht4eNt",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "data": "this.page.data",
+        "functionName": "sd_NEzrBXjnTQIPbkTi",
+        "category": "Dialog",
+        "x": 205,
+        "y": 280,
+        "wires": [
+            [
+                "sd_lMNkVQQ3Z5HgYFy4"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "data": {
+                "type": "this.page",
+                "value": "data",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "RegistrationComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_4MA8Srlvhqh9QOp5",
+        "type": "CloseDialog",
+        "z": "sd_wk2wdg3SYUht4eNt",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "data": "this.page.data",
+        "functionName": "sd_4MA8Srlvhqh9QOp5",
+        "category": "Dialog",
+        "x": 740,
+        "y": 180,
+        "wires": [
+            [
+                "sd_sffemnxCol41ggQ7"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "data": {
+                "type": "this.page",
+                "value": "data",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "RegistrationComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_sffemnxCol41ggQ7",
+        "type": "OpenDialog",
+        "z": "sd_wk2wdg3SYUht4eNt",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 4,
+        "flow": {
+            "flowId": "sd_MUxF7WJ8mrRyfsbP",
+            "label": "login"
+        },
+        "relativePath": "app/components/login/login",
+        "data": "this.page",
+        "ariaDescribedBy": "this.page",
+        "ariaLabel": "this.page",
+        "ariaLabelledBy": "this.page",
+        "autoFocus": "this.page",
+        "backdropClass": "this.page",
+        "closeOnNavigation": "this.page",
+        "direction": "this.page",
+        "disableClose": "this.page",
+        "hasBackdrop": "this.page",
+        "height": "this.page",
+        "maxHeight": "this.page",
+        "minHeight": "this.page",
+        "width": "this.page",
+        "maxWidth": "this.page",
+        "minWidth": "this.page",
+        "panelClass": "this.page",
+        "position": "this.page",
+        "restoreFocus": "this.page",
+        "role": "this.page",
+        "resultMapping": "this.page",
+        "functionName": "sd_sffemnxCol41ggQ7",
+        "category": "Dialog",
+        "x": 840,
+        "y": 180,
+        "wires": [
+            [],
+            [],
+            [],
             []
         ],
+        "__ssdTypeInputs__": {
+            "data": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "ariaDescribedBy": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "ariaLabel": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "ariaLabelledBy": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "autoFocus": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "backdropClass": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "closeOnNavigation": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "direction": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "disableClose": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "hasBackdrop": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "height": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "maxHeight": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "minHeight": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "width": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "maxWidth": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "minWidth": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "panelClass": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "position": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "restoreFocus": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "role": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            },
+            "resultMapping": {
+                "type": "this.page",
+                "value": "",
+                "constant": false
+            }
+        },
         "__n_excludedFromValidation__": {},
         "generateNext": false,
         "serviceName": "RegistrationComponent",

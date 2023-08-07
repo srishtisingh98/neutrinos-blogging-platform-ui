@@ -1,0 +1,86 @@
+[
+    {
+        "id": "sd_Pe0wMxqWQEYYoKbU",
+        "type": "tab",
+        "createdDate": "2023-08-04T09:26:01.345Z",
+        "label": "Must_Read",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "Must_ReadComponent"
+    },
+    {
+        "id": "sd_oLghpmxdIM4ayn2W",
+        "type": "OnInit",
+        "z": "sd_Pe0wMxqWQEYYoKbU",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_oLghpmxdIM4ayn2W",
+        "category": "Lifecycle Events",
+        "x": 285,
+        "y": 80,
+        "wires": [
+            [
+                "sd_LOnOdpIli7KlulTF"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "Must_ReadComponent"
+    },
+    {
+        "id": "sd_LOnOdpIli7KlulTF",
+        "type": "PageVariables",
+        "z": "sd_Pe0wMxqWQEYYoKbU",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "latestcard",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": ""
+                }
+            }
+        ],
+        "functionName": "sd_LOnOdpIli7KlulTF",
+        "category": "Function",
+        "x": 435,
+        "y": 80,
+        "wires": [
+            [
+                "sd_9kX5tB9QxG5fmhaJ"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Must_ReadComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_9kX5tB9QxG5fmhaJ",
+        "type": "Script",
+        "z": "sd_Pe0wMxqWQEYYoKbU",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.latestcard = new Array(3);",
+        "functionName": "sd_9kX5tB9QxG5fmhaJ",
+        "category": "Function",
+        "x": 580,
+        "y": 100,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Must_ReadComponent",
+        "generated": true
+    }
+]

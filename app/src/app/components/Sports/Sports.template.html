@@ -1,0 +1,24 @@
+<div fxLayout="column wrap" class="mt-20 width-100" fxLayoutAlign="start stretch" [fxShow]="true">
+  <div fxLayout="column wrap" class="width-100" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="row wrap" class="width-100" fxLayoutAlign="space-between center" [fxShow]="true">
+      <div class="side-headings">
+        Sports</div>
+      <div class="red">
+        See all<span style="font-size:50px ;">&#x2192;<span></span></span></div>
+    </div>
+  </div>
+  <div fxLayout="row wrap" style="row-gap :20px;" class="mt-20 width-100" fxLayoutAlign="space-around center" [fxShow]="true">
+    <div fxLayout="column wrap" class="ml-10 sportcard" fxLayoutAlign="space-between start" [fxShow]="true" *ngFor="let item of page.latestcard; let i = index">
+      <div fxLayout="row wrap" class="width-100 card-img-box" fxLayoutAlign="start stretch" [fxShow]="true"><img imgSrc="/Web/john-wick.jpg" width="100%"></div>
+      <div fxLayout="row wrap" class="mt-5 width-100" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div>
+          hari 3mins ago</div>
+      </div>
+      <div fxLayout="row wrap" class="mt-5 width-100" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div class="card-heading">
+          John Wick is an American neo-noir action thriller </div>
+      </div>
+      <div fxLayout="row wrap" class="mt-5 social-interactions width-100" fxLayoutAlign="space-between center" [fxShow]="true"><mat-icon>thumb_up</mat-icon><mat-icon>tab</mat-icon><mat-icon>share</mat-icon></div>
+    </div>
+  </div>
+</div>

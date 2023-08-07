@@ -18,7 +18,7 @@ import {
   FormBuilder,
   Validators,
 } from '@angular/forms'; //_splitter_
-import { MatDialog } from '@angular/material/dialog'; //_splitter_
+import { MatDialogRef, MatDialog } from '@angular/material/dialog'; //_splitter_
 import { RegistrationComponent } from 'app/components/Registration/Registration.component'; //_splitter_
 import { loginComponent } from 'app/components/login/login.component'; //_splitter_
 //append_imports_end
@@ -78,7 +78,7 @@ export class Forget_passwordComponent {
       bh.input = {};
       bh.local = {};
 
-      bh = this.sd_RJUpfN2xLL2AmbDd(bh);
+      bh = this.sd_ue9fHPfo63hjXrkn(bh);
       //appendnew_next_register
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_cjpx9HIazoc4Zjdn');
@@ -123,7 +123,7 @@ export class Forget_passwordComponent {
       bh.input = {};
       bh.local = {};
 
-      bh = this.sd_V8wuQieluaJDBS5k(bh);
+      bh = this.sd_4MoEJq07FOlkxqUE(bh);
       //appendnew_next_userlogin
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_q39vCe8XG9c9JZZI');
@@ -169,6 +169,19 @@ export class Forget_passwordComponent {
     }
   }
 
+  sd_ue9fHPfo63hjXrkn(bh) {
+    try {
+      const _dialogRef = this.__page_injector__.get(MatDialogRef);
+      _dialogRef.close(this.page.data);
+
+      bh = this.sd_RJUpfN2xLL2AmbDd(bh);
+      //appendnew_next_sd_ue9fHPfo63hjXrkn
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_ue9fHPfo63hjXrkn');
+    }
+  }
+
   sd_RJUpfN2xLL2AmbDd(bh) {
     try {
       const RegistrationDialog = this.__page_injector__.get(MatDialog);
@@ -209,10 +222,54 @@ export class Forget_passwordComponent {
       const page = this.page;
       console.log(page.forgetpasswordform.value);
 
+      bh = this.sd_ZiUtDhoCmUpypi2S(bh);
       //appendnew_next_sd_5szeg3wm6PBx5hXv
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_5szeg3wm6PBx5hXv');
+    }
+  }
+
+  sd_ZiUtDhoCmUpypi2S(bh) {
+    try {
+      const _dialogRef = this.__page_injector__.get(MatDialogRef);
+      _dialogRef.close(this.page.data);
+
+      bh = this.sd_Z4BOPGeVTmssuGmG(bh);
+      //appendnew_next_sd_ZiUtDhoCmUpypi2S
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_ZiUtDhoCmUpypi2S');
+    }
+  }
+
+  sd_Z4BOPGeVTmssuGmG(bh) {
+    try {
+      const loginDialog = this.__page_injector__.get(MatDialog);
+      const loginDialogRef = loginDialog.open(loginComponent, {
+        autoFocus: false,
+        closeOnNavigation: true,
+        hasBackdrop: true,
+        maxWidth: '400px',
+        minHeight: '500px',
+      });
+
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_Z4BOPGeVTmssuGmG');
+    }
+  }
+
+  sd_4MoEJq07FOlkxqUE(bh) {
+    try {
+      const _dialogRef = this.__page_injector__.get(MatDialogRef);
+      _dialogRef.close(this.page.data);
+
+      bh = this.sd_V8wuQieluaJDBS5k(bh);
+      //appendnew_next_sd_4MoEJq07FOlkxqUE
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_4MoEJq07FOlkxqUE');
     }
   }
 

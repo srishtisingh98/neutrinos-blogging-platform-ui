@@ -26,8 +26,8 @@
         </div>
         <div fxLayout="row wrap" class="mt-20" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button style="margin-left:20px;margin-right:20px;" class="login-btn" (click)="onregister()" type="submit">Create Account</button></div>
         <div fxLayout="row wrap" class="mt-20" fxLayoutAlign="center stretch" [fxShow]="true">
-          <div class="login-page-text">
-            Already a blogger?&#xA0;<a class="forgotpwd" (click)="tologin()">Login</a></div>
+          <div (click)="tologin()" class="login-page-text">
+            Already a blogger?&#xA0;<span class="forgotpwd cursor">Login</span></div>
         </div>
         <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
           <div class="login-page-text">

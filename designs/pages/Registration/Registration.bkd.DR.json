@@ -1619,6 +1619,13 @@
                                     "_type": "kv",
                                     "_attrDef": "p",
                                     "_visibility": false
+                                },
+                                {
+                                    "_key": "(click)",
+                                    "_value": "tologin()",
+                                    "_type": "kv",
+                                    "_attrDef": "c",
+                                    "_customAttributeFlag": "customInput"
                                 }
                             ],
                             "5e82f6e2-9a65-66fa-3449-f7f039657c41": {
@@ -1641,7 +1648,7 @@
                                     },
                                     {
                                         "_key": "html",
-                                        "_value": "Already a blogger?&nbsp<a class=\"forgotpwd\" (click)=\"tologin()\" >Login</a>",
+                                        "_value": "Already a blogger?&nbsp;<span class=\"forgotpwd cursor\">Login</span>",
                                         "_type": "a",
                                         "_attrDef": "p"
                                     }

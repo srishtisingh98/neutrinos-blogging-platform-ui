@@ -15,8 +15,12 @@ window['neutrinos'] = {
 };
 
 //CORE_REFERENCE_IMPORTS
-//CORE_REFERENCE_IMPORT-testComponent
-import { testComponent } from '../components/test/test.component';
+//CORE_REFERENCE_IMPORT-SportsComponent
+import { SportsComponent } from '../components/Sports/Sports.component';
+//CORE_REFERENCE_IMPORT-BusinessComponent
+import { BusinessComponent } from '../components/Business/Business.component';
+//CORE_REFERENCE_IMPORT-Must_ReadComponent
+import { Must_ReadComponent } from '../components/Must_Read/Must_Read.component';
 //CORE_REFERENCE_IMPORT-FooterComponent
 import { FooterComponent } from '../components/Footer/Footer.component';
 //CORE_REFERENCE_IMPORT-HomeComponent
@@ -63,8 +67,12 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
-  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-testComponent
-  testComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-SportsComponent
+  SportsComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-BusinessComponent
+  BusinessComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-Must_ReadComponent
+  Must_ReadComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-FooterComponent
   FooterComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-HomeComponent
@@ -110,7 +118,9 @@ export const appRoutes = [
   { path: 'fotgetpassword', component: Forget_passwordComponent },
   { path: 'registration', component: RegistrationComponent },
   { path: 'footer', component: FooterComponent },
-  { path: 'test', component: testComponent },
+  { path: 'must-read', component: Must_ReadComponent },
+  { path: 'business', component: BusinessComponent },
+  { path: 'sports', component: SportsComponent },
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];

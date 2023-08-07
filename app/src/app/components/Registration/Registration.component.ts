@@ -18,7 +18,7 @@ import {
   FormBuilder,
   Validators,
 } from '@angular/forms'; //_splitter_
-import { MatDialog } from '@angular/material/dialog'; //_splitter_
+import { MatDialogRef, MatDialog } from '@angular/material/dialog'; //_splitter_
 import { loginComponent } from 'app/components/login/login.component'; //_splitter_
 //append_imports_end
 
@@ -77,7 +77,7 @@ export class RegistrationComponent {
       bh.input = {};
       bh.local = {};
 
-      bh = this.sd_lMNkVQQ3Z5HgYFy4(bh);
+      bh = this.sd_NEzrBXjnTQIPbkTi(bh);
       //appendnew_next_tologin
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_Sql8QRqgcwdnG3W7');
@@ -139,6 +139,19 @@ export class RegistrationComponent {
     }
   }
 
+  sd_NEzrBXjnTQIPbkTi(bh) {
+    try {
+      const _dialogRef = this.__page_injector__.get(MatDialogRef);
+      _dialogRef.close(this.page.data);
+
+      bh = this.sd_lMNkVQQ3Z5HgYFy4(bh);
+      //appendnew_next_sd_NEzrBXjnTQIPbkTi
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_NEzrBXjnTQIPbkTi');
+    }
+  }
+
   sd_lMNkVQQ3Z5HgYFy4(bh) {
     try {
       const loginDialog = this.__page_injector__.get(MatDialog);
@@ -160,10 +173,35 @@ export class RegistrationComponent {
       const page = this.page;
       console.log(page.registrationform.value);
 
+      bh = this.sd_4MA8Srlvhqh9QOp5(bh);
       //appendnew_next_sd_a9USWxScj1PDKj0d
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_a9USWxScj1PDKj0d');
+    }
+  }
+
+  sd_4MA8Srlvhqh9QOp5(bh) {
+    try {
+      const _dialogRef = this.__page_injector__.get(MatDialogRef);
+      _dialogRef.close(this.page.data);
+
+      bh = this.sd_sffemnxCol41ggQ7(bh);
+      //appendnew_next_sd_4MA8Srlvhqh9QOp5
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_4MA8Srlvhqh9QOp5');
+    }
+  }
+
+  sd_sffemnxCol41ggQ7(bh) {
+    try {
+      const loginDialog = this.__page_injector__.get(MatDialog);
+      const loginDialogRef = loginDialog.open(loginComponent, {});
+
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_sffemnxCol41ggQ7');
     }
   }
 

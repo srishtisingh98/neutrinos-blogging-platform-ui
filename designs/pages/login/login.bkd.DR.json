@@ -1078,6 +1078,7 @@
                                 {
                                     "_key": "class",
                                     "_value": [
+                                        "cursor",
                                         "login-page-text"
                                     ],
                                     "_type": "dav",
@@ -1250,6 +1251,13 @@
                                     "_type": "kv",
                                     "_attrDef": "p",
                                     "_visibility": false
+                                },
+                                {
+                                    "_key": "(click)",
+                                    "_value": "changepassword()",
+                                    "_type": "kv",
+                                    "_attrDef": "c",
+                                    "_customAttributeFlag": "customInput"
                                 }
                             ],
                             "d8ba5db6-c74d-5d0d-dc43-58fba2855ce1": {
@@ -1272,7 +1280,7 @@
                                     },
                                     {
                                         "_key": "html",
-                                        "_value": "Forgot your&nbsp;<a href=\"\" class=\"forgotpwd\" (click)=\"forgetpwd()\" >password</a>?",
+                                        "_value": "Forgot your&nbsp;<span class=\"forgotpwd\">password?</span>",
                                         "_type": "a",
                                         "_attrDef": "p"
                                     }
@@ -1487,6 +1495,7 @@
                                 {
                                     "_key": "class",
                                     "_value": [
+                                        "cursor",
                                         "login-page-text"
                                     ],
                                     "_type": "dav",
@@ -1659,6 +1668,13 @@
                                     "_type": "kv",
                                     "_attrDef": "p",
                                     "_visibility": false
+                                },
+                                {
+                                    "_key": "(click)",
+                                    "_value": "toregister()",
+                                    "_type": "kv",
+                                    "_attrDef": "c",
+                                    "_customAttributeFlag": "customInput"
                                 }
                             ],
                             "069266fb-6362-07e3-a06a-7d1a3996913b": {
@@ -1681,7 +1697,7 @@
                                     },
                                     {
                                         "_key": "html",
-                                        "_value": "New to blogging?&nbsp<a href=\"\" class=\"forgotpwd\" (click)=\"toregister()\" >Sign Up</a>",
+                                        "_value": "New to blogging?&nbsp;<span class=\"forgotpwd\">Sign Up</span>\n<!-- <a href=\"\" class=\"forgotpwd\" (click)=\"toregister()\" >Sign Up</a> -->",
                                         "_type": "a",
                                         "_attrDef": "p"
                                     }
@@ -1709,7 +1725,9 @@
                             },
                             {
                                 "_key": "class",
-                                "_value": [],
+                                "_value": [
+                                    "mt-10"
+                                ],
                                 "_type": "dav",
                                 "_attrDef": "p"
                             },
