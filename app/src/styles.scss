@@ -116,6 +116,7 @@ background-color: white;
 }
 .card-img-box{
      max-height: 350px;
+     max-height: 150px;
   text-align: center;
 }
 .card-img-box img{
@@ -130,12 +131,6 @@ background-color: white;
     font-weight: bold;
 }
 
-
-.social-interactions{
-//     display: flex;
-//   gap: 10px;
-//   margin-top: 10px;
-}
 .social-interactions mat-icon {
   color:$primary-color;
   padding: 5px 10px;
@@ -171,7 +166,13 @@ bh-latest_blogs{
      max-height: 350px;
   text-align: center;
 }
-.must-readcard-img-box img{
+.must-readcard-img-box img{}
+//blogpage}
+.card-img-box1{
+     max-height: 350px;
+  text-align: center;
+}
+.card-img-box1 img{
   height: 100%; 
   width: 100%; 
   aspect-ratio: 3/2;
@@ -365,4 +366,72 @@ p span .cursor1{
 .color-black{
     color: black;
     font-weight: 600;
+}
+.commentbox{
+    // border: 1px solid $primary-color;
+    padding: 10px;
+    // margin-top: 10px;
+}
+.commentarea{
+    height: 50px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 3px 5px;
+}
+.commentarea .mat-form-field-underline{
+    display: none;
+}
+.cmntbtn{
+  position: absolute; 
+  top: 50%; 
+  left: 95%;
+  transform: translate(-50%, -50%);
+}
+.commentitem{
+    padding: 10px 5px;
+}
+.blogbox{
+    border: 1px solid $primary-color;
+}
+.blog-head{
+padding: 5px;
+}
+.blog-head span:first-child{
+    font-size: 12px;
+}
+.blog-head span{
+    font-size: 9px;
+}
+.blog-content{
+    padding: 5px 10px;
+    max-height: 200px;
+    overflow-y: scroll;
+   
+}
+.blog-content::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.blog-content::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.blog-content::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 0.25em;
+}
+.p-10{
+    padding: 10px;
+}
+.commentlist{
+    background-color: #ececec;
+    margin-bottom: 3px;
+}
+.similarblogs{
+    border: 1px solid black;
+    padding: 10px;
+}
+.social-interactions1{
+background-color: rgb(112, 167, 187);
+border-radius: 25px;
 }

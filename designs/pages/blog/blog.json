@@ -1,0 +1,130 @@
+[
+    {
+        "id": "sd_kzanf14KxJuzQ4OG",
+        "type": "tab",
+        "createdDate": "2023-08-04T13:34:16.696Z",
+        "label": "blog",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "blogComponent"
+    },
+    {
+        "id": "sd_ytCFjUmavrcoUV3N",
+        "type": "OnInit",
+        "z": "sd_kzanf14KxJuzQ4OG",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_ytCFjUmavrcoUV3N",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_W91vWrMOp20rteWw"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "blogComponent"
+    },
+    {
+        "id": "sd_W91vWrMOp20rteWw",
+        "type": "PageVariables",
+        "z": "sd_kzanf14KxJuzQ4OG",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "comment",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": ""
+                }
+            }
+        ],
+        "functionName": "sd_W91vWrMOp20rteWw",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            [
+                "sd_tZVVbG9k26rOqtVA"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "blogComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_tZVVbG9k26rOqtVA",
+        "type": "Script",
+        "z": "sd_kzanf14KxJuzQ4OG",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log('data',bh.response)\n\nconsole.log(page.comment);\n page.postcomment = []",
+        "functionName": "sd_tZVVbG9k26rOqtVA",
+        "category": "Function",
+        "x": 340,
+        "y": 60,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "blogComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_HJ4oTzq6wVtaESyD",
+        "type": "PageStart",
+        "z": "sd_kzanf14KxJuzQ4OG",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "postcmnt",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "postcmnt",
+        "category": "General",
+        "x": 120,
+        "y": 200,
+        "wires": [
+            [
+                "sd_yNT03BmTsC69AKRk"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "blogComponent"
+    },
+    {
+        "id": "sd_yNT03BmTsC69AKRk",
+        "type": "Script",
+        "z": "sd_kzanf14KxJuzQ4OG",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(page.comment);\npage.postcomment.push(page.comment);\npage.comment = '';",
+        "functionName": "sd_yNT03BmTsC69AKRk",
+        "category": "Function",
+        "x": 285,
+        "y": 200,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "blogComponent",
+        "generated": true
+    }
+]

@@ -65,6 +65,19 @@
         "blogging-logo",
         "footer-text",
         "cursor1",
-        "color-black"
+        "color-black",
+        "card-img-box1",
+        "commentbox",
+        "commentarea",
+        "mat-form-field-underline",
+        "cmntbtn",
+        "commentitem",
+        "blogbox",
+        "blog-head",
+        "blog-content",
+        "p-10",
+        "commentlist",
+        "similarblogs",
+        "social-interactions1"
     ]
 }

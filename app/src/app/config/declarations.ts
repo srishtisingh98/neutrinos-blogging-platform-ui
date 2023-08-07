@@ -31,6 +31,10 @@ import { RegistrationComponent } from '../components/Registration/Registration.c
 import { Forget_passwordComponent } from '../components/Forget_password/Forget_password.component';
 //CORE_REFERENCE_IMPORT-loginComponent
 import { loginComponent } from '../components/login/login.component';
+//CORE_REFERENCE_IMPORT-blogComponent
+import { blogComponent } from '../components/blog/blog.component';
+//CORE_REFERENCE_IMPORT-all_latestblogsComponent
+import { all_latestblogsComponent } from '../components/alllatestblogs/all_latestblogs.component';
 //CORE_REFERENCE_IMPORT-latest_blogsComponent
 import { latest_blogsComponent } from '../components/latestBlogs/latest_blogs.component';
 //CORE_REFERENCE_IMPORT-dashboardComponent
@@ -83,6 +87,10 @@ export const appDeclarations = [
   Forget_passwordComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-loginComponent
   loginComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-blogComponent
+  blogComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-all_latestblogsComponent
+  all_latestblogsComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-latest_blogsComponent
   latest_blogsComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-dashboardComponent
@@ -121,6 +129,8 @@ export const appRoutes = [
   { path: 'must-read', component: Must_ReadComponent },
   { path: 'business', component: BusinessComponent },
   { path: 'sports', component: SportsComponent },
+  { path: 'allblogs', component: all_latestblogsComponent },
+  { path: 'blog', component: blogComponent },
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];

@@ -82,5 +82,160 @@
         "generateNext": false,
         "serviceName": "latest_blogsComponent",
         "generated": true
+    },
+    {
+        "id": "sd_obo1CmlWFxgtcjxk",
+        "type": "PageStart",
+        "z": "sd_T4AGcBygbOez6TYH",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "seeall",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "seeall",
+        "category": "General",
+        "x": 200,
+        "y": 200,
+        "wires": [
+            [
+                "sd_y3gisdNdGEl0VGIX"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "latest_blogsComponent"
+    },
+    {
+        "id": "sd_y3gisdNdGEl0VGIX",
+        "type": "Script",
+        "z": "sd_T4AGcBygbOez6TYH",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log('seeall')",
+        "functionName": "sd_y3gisdNdGEl0VGIX",
+        "category": "Function",
+        "x": 380,
+        "y": 200,
+        "wires": [
+            [
+                "sd_ZR2awaGOZu8qtHRm"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "latest_blogsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_ZR2awaGOZu8qtHRm",
+        "type": "Navigation",
+        "z": "sd_T4AGcBygbOez6TYH",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "path": "/allblogs",
+        "pathMap": "",
+        "pathparams": "",
+        "pathparamsMap": "",
+        "qparams": "",
+        "qparamsMap": "",
+        "qparamsArray": "",
+        "resultMapping": {
+            "type": "this.page",
+            "value": "result"
+        },
+        "functionName": "sd_ZR2awaGOZu8qtHRm",
+        "category": "Navigation",
+        "x": 505,
+        "y": 200,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "latest_blogsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_HgUpsMsMO9E5GWGM",
+        "type": "PageStart",
+        "z": "sd_T4AGcBygbOez6TYH",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "blog",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "value",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "blog",
+        "category": "General",
+        "x": 140,
+        "y": 360,
+        "wires": [
+            [
+                "sd_4boeZGkbln7yoZCM"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "latest_blogsComponent"
+    },
+    {
+        "id": "sd_7UhfCT3KHMLFNRoq",
+        "type": "Navigation",
+        "z": "sd_T4AGcBygbOez6TYH",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "path": "/blog",
+        "resultMapping": {
+            "type": "bh",
+            "value": "response"
+        },
+        "functionName": "sd_7UhfCT3KHMLFNRoq",
+        "category": "Navigation",
+        "x": 345,
+        "y": 360,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "latest_blogsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_4boeZGkbln7yoZCM",
+        "type": "Script",
+        "z": "sd_T4AGcBygbOez6TYH",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(bh.input.value);\n",
+        "functionName": "sd_4boeZGkbln7yoZCM",
+        "category": "Function",
+        "x": 225,
+        "y": 360,
+        "wires": [
+            [
+                "sd_7UhfCT3KHMLFNRoq"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "latest_blogsComponent",
+        "generated": true
     }
 ]
