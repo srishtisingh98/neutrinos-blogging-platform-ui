@@ -12,6 +12,7 @@ import {
 import { SDBaseService } from 'app/n-services/SDBaseService'; //_splitter_
 import { SDPageCommonService } from 'app/n-services/sd-page-common.service'; //_splitter_
 import { __NEU_ServiceInvokerService__ } from 'app/n-services/service-caller.service'; //_splitter_
+import { getblogs } from 'app/sd-services/getblogs'; //_splitter_
 import { Router } from '@angular/router'; //_splitter_
 //append_imports_end
 
@@ -97,7 +98,7 @@ export class latest_blogsComponent {
     try {
       this.page.latestcard = undefined;
 
-      bh = this.sd_Xs03P3ssdIT0ib1y(bh);
+      bh = this.sd_cloGiasKlYvQ8ELz(bh);
       //appendnew_next_sd_NEmPJzzMCwwHKQHf
       return bh;
     } catch (e) {
@@ -105,10 +106,27 @@ export class latest_blogsComponent {
     }
   }
 
+  async sd_cloGiasKlYvQ8ELz(bh) {
+    try {
+      const getblogsInstance: getblogs = this.__page_injector__.get(getblogs);
+
+      let outputVariables = await getblogsInstance.sd_VuG62A5wMH0xEWwr(
+        bh.local.body
+      );
+      bh.input.result = outputVariables.local.result;
+
+      bh = this.sd_Xs03P3ssdIT0ib1y(bh);
+      //appendnew_next_sd_cloGiasKlYvQ8ELz
+      return bh;
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_cloGiasKlYvQ8ELz');
+    }
+  }
+
   sd_Xs03P3ssdIT0ib1y(bh) {
     try {
       const page = this.page;
-      page.latestcard = new Array(4);
+      page.latestcard = bh.input.result;
 
       //appendnew_next_sd_Xs03P3ssdIT0ib1y
       return bh;
@@ -166,7 +184,9 @@ export class latest_blogsComponent {
         this.sdService.getPathAndQParamsObj('/blog');
       bh.response = await this.__page_injector__
         .get(Router)
-        .navigate([this.sdService.formatPathWithParams(path, undefined)]);
+        .navigate([this.sdService.formatPathWithParams(path, undefined)], {
+          queryParams: Object.assign(qprm, ''),
+        });
 
       //appendnew_next_sd_7UhfCT3KHMLFNRoq
       return bh;

@@ -2259,32 +2259,6 @@
                                     "_visibility": false
                                 }
                             ],
-                            "d977ff56-3cd2-c07f-f014-b8f619873c4f": {
-                                "paletteKey": "html-editor",
-                                "parentEditorKey": "208d92d1-b589-276b-b3a1-0209ae18f342",
-                                "isAdvancedChildComponent": true,
-                                "commentid": null,
-                                "designerReference": [
-                                    {
-                                        "_key": "style",
-                                        "_value": "",
-                                        "_type": "kv",
-                                        "_attrDef": "p"
-                                    },
-                                    {
-                                        "_key": "class",
-                                        "_value": "",
-                                        "_type": "dav",
-                                        "_attrDef": "p"
-                                    },
-                                    {
-                                        "_key": "html",
-                                        "_value": "",
-                                        "_type": "a",
-                                        "_attrDef": "p"
-                                    }
-                                ]
-                            },
                             "66d0d200-414e-8de8-8a00-84ed5493451e": {
                                 "paletteKey": "html-editor",
                                 "parentEditorKey": "208d92d1-b589-276b-b3a1-0209ae18f342",
@@ -2305,7 +2279,59 @@
                                     },
                                     {
                                         "_key": "html",
-                                        "_value": "{{comments}}",
+                                        "_value": "{{comments.username}}",
+                                        "_type": "a",
+                                        "_attrDef": "p"
+                                    }
+                                ]
+                            },
+                            "e03bc9b6-253f-41ab-5549-69dedc811766": {
+                                "paletteKey": "html-editor",
+                                "parentEditorKey": "208d92d1-b589-276b-b3a1-0209ae18f342",
+                                "isAdvancedChildComponent": true,
+                                "commentid": null,
+                                "designerReference": [
+                                    {
+                                        "_key": "style",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "class",
+                                        "_value": "",
+                                        "_type": "dav",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "html",
+                                        "_value": "<br>",
+                                        "_type": "a",
+                                        "_attrDef": "p"
+                                    }
+                                ]
+                            },
+                            "18f634b3-8ee7-38e1-0a5b-5b257b117abc": {
+                                "paletteKey": "html-editor",
+                                "parentEditorKey": "208d92d1-b589-276b-b3a1-0209ae18f342",
+                                "isAdvancedChildComponent": true,
+                                "commentid": null,
+                                "designerReference": [
+                                    {
+                                        "_key": "style",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "class",
+                                        "_value": "",
+                                        "_type": "dav",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "html",
+                                        "_value": "{{comments.comment_text}}",
                                         "_type": "a",
                                         "_attrDef": "p"
                                     }

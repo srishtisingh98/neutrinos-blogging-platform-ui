@@ -17,6 +17,12 @@ window['neutrinos'] = {
 //CORE_REFERENCE_IMPORTS
 //CORE_REFERENCE_IMPORT-AddBlogComponent
 import { AddBlogComponent } from '../components/AddBlog/AddBlog.component';
+//CORE_REFERENCE_IMPORT-getblogs
+import { getblogs } from '../sd-services/getblogs';
+//CORE_REFERENCE_IMPORT-getcomments
+import { getcomments } from '../sd-services/getcomments';
+//CORE_REFERENCE_IMPORT-postcomment
+import { postcomment } from '../sd-services/postcomment';
 //CORE_REFERENCE_IMPORT-SportsComponent
 import { SportsComponent } from '../components/Sports/Sports.component';
 //CORE_REFERENCE_IMPORT-BusinessComponent
@@ -116,6 +122,12 @@ export const appProviders = [
   },
   NAuthGuardService,
   //CORE_REFERENCE_PUSH_TO_PRO_ARRAY
+//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-getblogs
+getblogs,
+//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-getcomments
+getcomments,
+//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-postcomment
+postcomment,
 ];
 
 /**
