@@ -19,8 +19,8 @@
         "name": "",
         "functionName": "sd_m3RLj6RHwDCE9gyY",
         "category": "Lifecycle Events",
-        "x": 30,
-        "y": 30,
+        "x": 105,
+        "y": 40,
         "wires": [
             [
                 "sd_NEmPJzzMCwwHKQHf"
@@ -51,11 +51,11 @@
         ],
         "functionName": "sd_NEmPJzzMCwwHKQHf",
         "category": "Function",
-        "x": 180,
-        "y": 30,
+        "x": 255,
+        "y": 40,
         "wires": [
             [
-                "sd_cloGiasKlYvQ8ELz"
+                "sd_Xs03P3ssdIT0ib1y"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -70,11 +70,11 @@
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "page.latestcard = bh.input.result",
+        "script": "page.latestcard = new Array(4);",
         "functionName": "sd_Xs03P3ssdIT0ib1y",
         "category": "Function",
-        "x": 425,
-        "y": 60,
+        "x": 415,
+        "y": 70,
         "wires": [
             []
         ],
@@ -84,23 +84,23 @@
         "generated": true
     },
     {
-        "id": "sd_obo1CmlWFxgtcjxk",
+        "id": "sd_u8PUMYoOUhefsAsA",
         "type": "PageStart",
         "z": "sd_T4AGcBygbOez6TYH",
         "viewType": "pages",
         "nodeType": "start",
-        "name": "seeall",
+        "name": "latestbloglike",
         "outputs": 1,
         "inputVariables": [],
         "localVariables": [],
         "flow_type": "sync",
-        "functionName": "seeall",
+        "functionName": "latestbloglike",
         "category": "General",
-        "x": 200,
-        "y": 200,
+        "x": 105,
+        "y": 220,
         "wires": [
             [
-                "sd_y3gisdNdGEl0VGIX"
+                "sd_NdfYGdzxBH7WsoKz"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -108,7 +108,7 @@
         "serviceName": "latest_blogsComponent"
     },
     {
-        "id": "sd_y3gisdNdGEl0VGIX",
+        "id": "sd_NdfYGdzxBH7WsoKz",
         "type": "Script",
         "z": "sd_T4AGcBygbOez6TYH",
         "viewType": "common",
@@ -241,7 +241,7 @@
         "functionName": "sd_4boeZGkbln7yoZCM",
         "category": "Function",
         "x": 225,
-        "y": 360,
+        "y": 220,
         "wires": [
             [
                 "sd_nLcRHFeh4qPbmFGA"

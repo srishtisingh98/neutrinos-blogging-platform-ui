@@ -60,11 +60,27 @@ export class BusinessComponent {
     }
   }
 
+  businesslike(...others) {
+    try {
+      var bh: any = this.__page_injector__
+        .get(SDPageCommonService)
+        .constructFlowObject(this);
+      bh.input = {};
+      bh.local = {};
+
+      bh = this.sd_OVe6tIqAegezBKYv(bh);
+      //appendnew_next_businesslike
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_1Jg22qs8WASrlIjK');
+    }
+  }
+
   //appendnew_flow_BusinessComponent_start
 
   sd_x9PGczWLvJSduf1y(bh) {
     try {
       this.page.latestcard = undefined;
+      this.page.status = false;
 
       bh = this.sd_WMM6ATfH6OZIzuS5(bh);
       //appendnew_next_sd_x9PGczWLvJSduf1y
@@ -83,6 +99,30 @@ export class BusinessComponent {
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_WMM6ATfH6OZIzuS5');
+    }
+  }
+
+  sd_OVe6tIqAegezBKYv(bh) {
+    try {
+      const page = this.page;
+      console.log('must-read-check');
+      // page.count=0;
+      // for(let count=0;count<=0;count++){
+      //     page.count=page.count+1;
+      //     return page.count;
+      // }
+      if (page.count == 0) {
+        page.count = 1;
+        page.status = true;
+      } else {
+        page.status = false;
+        page.count = 0;
+      }
+
+      //appendnew_next_sd_OVe6tIqAegezBKYv
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_OVe6tIqAegezBKYv');
     }
   }
 

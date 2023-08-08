@@ -60,11 +60,27 @@ export class SportsComponent {
     }
   }
 
+  sportslike(...others) {
+    try {
+      var bh: any = this.__page_injector__
+        .get(SDPageCommonService)
+        .constructFlowObject(this);
+      bh.input = {};
+      bh.local = {};
+
+      bh = this.sd_DBOuD8RwiUf3vEOD(bh);
+      //appendnew_next_sportslike
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_Z36TCCk0ee8Tr5ll');
+    }
+  }
+
   //appendnew_flow_SportsComponent_start
 
   sd_zG2Y7OAA8gnkB9dm(bh) {
     try {
       this.page.latestcard = undefined;
+      this.page.status = false;
 
       bh = this.sd_riOxcdRHiJOZgUdd(bh);
       //appendnew_next_sd_zG2Y7OAA8gnkB9dm
@@ -83,6 +99,30 @@ export class SportsComponent {
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_riOxcdRHiJOZgUdd');
+    }
+  }
+
+  sd_DBOuD8RwiUf3vEOD(bh) {
+    try {
+      const page = this.page;
+      console.log('sports-check');
+      // page.count=0;
+      // for(let count=0;count<=0;count++){
+      //     page.count=page.count+1;
+      //     return page.count;
+      // }
+      if (page.count == 0) {
+        page.count = 1;
+        page.status = true;
+      } else {
+        page.status = false;
+        page.count = 0;
+      }
+
+      //appendnew_next_sd_DBOuD8RwiUf3vEOD
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_DBOuD8RwiUf3vEOD');
     }
   }
 

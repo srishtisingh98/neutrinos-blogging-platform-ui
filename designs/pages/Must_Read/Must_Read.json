@@ -47,6 +47,13 @@
                     "type": "this.page",
                     "value": ""
                 }
+            },
+            {
+                "textIp": "count",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": ""
+                }
             }
         ],
         "functionName": "sd_LOnOdpIli7KlulTF",
@@ -73,8 +80,52 @@
         "script": "page.latestcard = new Array(3);",
         "functionName": "sd_9kX5tB9QxG5fmhaJ",
         "category": "Function",
-        "x": 580,
-        "y": 100,
+        "x": 545,
+        "y": 80,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Must_ReadComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_9qWGu5PRZERitUCz",
+        "type": "PageStart",
+        "z": "sd_Pe0wMxqWQEYYoKbU",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "mustreadlike",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "mustreadlike",
+        "category": "General",
+        "x": 200,
+        "y": 220,
+        "wires": [
+            [
+                "sd_kCjq3xqPuMS84FTh"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "Must_ReadComponent"
+    },
+    {
+        "id": "sd_kCjq3xqPuMS84FTh",
+        "type": "Script",
+        "z": "sd_Pe0wMxqWQEYYoKbU",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(\"must-read-check\");\nif(page.count==0){\n    page.count=1;\n    page.status=true;\n}else{\n    page.status=false;\n    page.count=0;\n}",
+        "functionName": "sd_kCjq3xqPuMS84FTh",
+        "category": "Function",
+        "x": 305,
+        "y": 220,
         "wires": [
             []
         ],

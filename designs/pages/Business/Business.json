@@ -47,6 +47,13 @@
                     "type": "this.page",
                     "value": ""
                 }
+            },
+            {
+                "textIp": "status",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "false"
+                }
             }
         ],
         "functionName": "sd_x9PGczWLvJSduf1y",
@@ -82,5 +89,49 @@
         "generateNext": false,
         "serviceName": "BusinessComponent",
         "generated": true
+    },
+    {
+        "id": "sd_OVe6tIqAegezBKYv",
+        "type": "Script",
+        "z": "sd_ftBbsvjdKx34aMsy",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(\"must-read-check\");\n// page.count=0;\n// for(let count=0;count<=0;count++){\n//     page.count=page.count+1;\n//     return page.count;\n// }\nif(page.count==0){\n    page.count=1;\n    page.status=true;\n}else{\n    page.status=false;\n    page.count=0;\n}",
+        "functionName": "sd_OVe6tIqAegezBKYv",
+        "category": "Function",
+        "x": 325,
+        "y": 220,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "BusinessComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_1Jg22qs8WASrlIjK",
+        "type": "PageStart",
+        "z": "sd_ftBbsvjdKx34aMsy",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "businesslike",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "businesslike",
+        "category": "General",
+        "x": 205,
+        "y": 220,
+        "wires": [
+            [
+                "sd_OVe6tIqAegezBKYv"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "BusinessComponent"
     }
 ]

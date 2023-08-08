@@ -23,6 +23,7 @@
         "card",
         "card-img-box",
         "card-heading",
+        "padding-5-15",
         "social-interactions",
         "side-headings",
         "ml-10",
@@ -47,6 +48,7 @@
         "cursor",
         "text-black",
         "header-bg",
+        "margin-3",
         "profile-icon-bg",
         "profile-img",
         "bg-grey",
@@ -67,6 +69,7 @@
         "footer-text",
         "cursor1",
         "color-black",
+        "likedisplay",
         "commentbox",
         "commentarea",
         "mat-form-field-underline",
@@ -78,6 +81,8 @@
         "p-10",
         "commentlist",
         "similarblogs",
-        "social-interactions1"
+        "social-interactions1",
+        "add-blog",
+        "mat-form-field"
     ]
 }
