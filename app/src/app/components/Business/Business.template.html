@@ -18,9 +18,8 @@
         <div class="card-heading">
           John Wick is an American neo-noir action thriller </div>
       </div>
-      <div fxLayout="row wrap" class="mt-5 social-interactions width-100" fxLayoutAlign="space-between center" [fxShow]="true"><mat-icon (click)="businesslike()">thumb_up</mat-icon><mat-icon>tab</mat-icon><mat-icon>share</mat-icon></div>
-      <div fxLayout="row wrap" class="likedisplay padding-5-15" fxLayoutAlign="start stretch" [fxShow]="page.status"><span>
-        {{page.count}}</span></div>
+      <div fxLayout="row wrap" class="mt-5 social-interactions width-100" fxLayoutAlign="space-between center" [fxShow]="true"><mat-icon (click)="businesslike()">thumb_up</mat-icon><span>
+        {{page.count}}</span><mat-icon>tab</mat-icon><mat-icon>share</mat-icon></div>
     </div>
   </div>
 </div>

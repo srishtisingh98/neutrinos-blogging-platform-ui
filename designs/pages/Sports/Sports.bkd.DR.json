@@ -1514,7 +1514,7 @@
                             "_attrDef": "p"
                         }
                     ],
-                    "3a00e73b-6f8b-9028-60e5-41dbac3944d0": {
+                    "71fa9b37-24bc-f64c-e1bf-e05d54a27a80": {
                         "paletteKey": "NG-icon",
                         "parentEditorKey": "8ad3fb1f-1c9a-2fb1-6354-f71adabe464b",
                         "commentid": null,
@@ -1559,151 +1559,9 @@
                             }
                         ]
                     },
-                    "29831770-8d76-b8c1-f822-02dd67fdf8cd": {
-                        "paletteKey": "NG-icon",
-                        "parentEditorKey": "8ad3fb1f-1c9a-2fb1-6354-f71adabe464b",
-                        "commentid": null,
-                        "designerReference": [
-                            {
-                                "_key": "style",
-                                "_value": "",
-                                "_type": "kv",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "class",
-                                "_value": "",
-                                "_type": "dav",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "IconName",
-                                "_value": "tab",
-                                "_type": "a",
-                                "_attrDef": "p",
-                                "_useAsLabel": true
-                            },
-                            {
-                                "_key": "[inline]",
-                                "_value": "",
-                                "_type": "kv",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "color",
-                                "_value": "",
-                                "_type": "kv",
-                                "_attrDef": "p"
-                            }
-                        ]
-                    },
-                    "a8474e79-bce9-bc03-2076-12df247e82e9": {
-                        "paletteKey": "NG-icon",
-                        "parentEditorKey": "8ad3fb1f-1c9a-2fb1-6354-f71adabe464b",
-                        "commentid": null,
-                        "designerReference": [
-                            {
-                                "_key": "style",
-                                "_value": "",
-                                "_type": "kv",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "class",
-                                "_value": "",
-                                "_type": "dav",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "IconName",
-                                "_value": "share",
-                                "_type": "a",
-                                "_attrDef": "p",
-                                "_useAsLabel": true
-                            },
-                            {
-                                "_key": "[inline]",
-                                "_value": "",
-                                "_type": "kv",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "color",
-                                "_value": "",
-                                "_type": "kv",
-                                "_attrDef": "p"
-                            }
-                        ]
-                    }
-                },
-                "143d0872-1e7d-a6cc-86e4-94c00b193169": {
-                    "paletteKey": "FlexLayoutRow",
-                    "parentEditorKey": "2f3133d8-97a4-0ade-ff73-ee51edcd5eae",
-                    "commentid": null,
-                    "designerReference": [
-                        {
-                            "_key": "componentLabel",
-                            "_value": "Row",
-                            "_type": "kv",
-                            "_attrDef": "p",
-                            "_useAsLabel": true
-                        },
-                        {
-                            "_key": "style",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "class",
-                            "_value": [
-                                "likedisplay",
-                                "padding-5-15"
-                            ],
-                            "_type": "dav",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "fxFlex",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "fxLayoutGap",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "wrap",
-                            "_value": "wrap",
-                            "_type": "a",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "layoutAlign",
-                            "_value": "start",
-                            "_type": "a",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "pLayoutAlign",
-                            "_value": "stretch",
-                            "_type": "a",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "[fxShow]",
-                            "_value": "page.status",
-                            "_type": "kv",
-                            "_attrDef": "p",
-                            "_customAttributeFlag": "customInput"
-                        }
-                    ],
-                    "3178100a-0f3c-ba61-1d38-edffe692a97b": {
+                    "a86795e4-95e5-d8f0-54d9-c87d2b9f2e80": {
                         "paletteKey": "Html5",
-                        "parentEditorKey": "143d0872-1e7d-a6cc-86e4-94c00b193169",
+                        "parentEditorKey": "8ad3fb1f-1c9a-2fb1-6354-f71adabe464b",
                         "isAdvancedComponent": true,
                         "commentid": null,
                         "designerReference": [
@@ -1890,9 +1748,9 @@
                                 "_visibility": false
                             }
                         ],
-                        "6b87f16e-da45-9af5-becf-1d82461b9e6e": {
+                        "0bcf8397-2e4c-49bd-7643-641ed050676a": {
                             "paletteKey": "html-editor",
-                            "parentEditorKey": "3178100a-0f3c-ba61-1d38-edffe692a97b",
+                            "parentEditorKey": "a86795e4-95e5-d8f0-54d9-c87d2b9f2e80",
                             "isAdvancedChildComponent": true,
                             "commentid": null,
                             "designerReference": [
@@ -1916,6 +1774,82 @@
                                 }
                             ]
                         }
+                    },
+                    "29831770-8d76-b8c1-f822-02dd67fdf8cd": {
+                        "paletteKey": "NG-icon",
+                        "parentEditorKey": "8ad3fb1f-1c9a-2fb1-6354-f71adabe464b",
+                        "commentid": null,
+                        "designerReference": [
+                            {
+                                "_key": "style",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "class",
+                                "_value": "",
+                                "_type": "dav",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "IconName",
+                                "_value": "tab",
+                                "_type": "a",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
+                                "_key": "[inline]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "color",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            }
+                        ]
+                    },
+                    "a8474e79-bce9-bc03-2076-12df247e82e9": {
+                        "paletteKey": "NG-icon",
+                        "parentEditorKey": "8ad3fb1f-1c9a-2fb1-6354-f71adabe464b",
+                        "commentid": null,
+                        "designerReference": [
+                            {
+                                "_key": "style",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "class",
+                                "_value": "",
+                                "_type": "dav",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "IconName",
+                                "_value": "share",
+                                "_type": "a",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
+                                "_key": "[inline]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "color",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            }
+                        ]
                     }
                 }
             }

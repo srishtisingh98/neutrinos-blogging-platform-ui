@@ -2,7 +2,7 @@ export const environment = {
     "name": "prod",
     "properties": {
         "production": true,
-        "ssdURL": "http://localhost:8081/api/",
+        "ssdURL": "http://localhost:8080/api/",
         "tenantName": "Heptagon",
         "appName": "neutrinos-blogging-platform-ui",
         "namespace": "com.Heptagon.neutrinos-blogging-platform-ui",
