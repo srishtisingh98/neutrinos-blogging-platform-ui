@@ -15,6 +15,8 @@ window['neutrinos'] = {
 };
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-AddBlogComponent
+import { AddBlogComponent } from '../components/AddBlog/AddBlog.component';
 //CORE_REFERENCE_IMPORT-SportsComponent
 import { SportsComponent } from '../components/Sports/Sports.component';
 //CORE_REFERENCE_IMPORT-BusinessComponent
@@ -71,6 +73,8 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-AddBlogComponent
+  AddBlogComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-SportsComponent
   SportsComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-BusinessComponent
@@ -131,6 +135,7 @@ export const appRoutes = [
   { path: 'sports', component: SportsComponent },
   { path: 'allblogs', component: all_latestblogsComponent },
   { path: 'blog', component: blogComponent },
+  { path: 'AddBlog', component: AddBlogComponent },
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];

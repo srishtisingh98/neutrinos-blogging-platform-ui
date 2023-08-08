@@ -1,0 +1,127 @@
+[
+    {
+        "id": "sd_EQTGVQPFwAVP6PGo",
+        "type": "tab",
+        "createdDate": "2023-08-07T20:19:57.569Z",
+        "label": "post_api",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "tabType": "client",
+        "generateNext": true,
+        "serviceName": "post_api",
+        "relativeParentPath": ""
+    },
+    {
+        "id": "sd_VGx9ZUyRdPN117VL",
+        "type": "Start",
+        "z": "sd_EQTGVQPFwAVP6PGo",
+        "viewType": "client-server",
+        "nodeType": "start",
+        "name": "",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "body",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "accept_bh": false,
+        "functionName": "sd_VGx9ZUyRdPN117VL",
+        "category": "General",
+        "x": 160,
+        "y": 160,
+        "wires": [
+            [
+                "sd_xLEFSP00txXGN5qs"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "post_api"
+    },
+    {
+        "id": "sd_qCAX14LQwOVTLeLC",
+        "type": "HttpRequest",
+        "z": "sd_EQTGVQPFwAVP6PGo",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "post",
+        "methodMappingObj": {},
+        "urlMapping": "bh.url",
+        "urlMappingObj": {
+            "mapVarType": "bh",
+            "mapVarValue": "url"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBody": "bh.input.body",
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": "body"
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "functionName": "sd_qCAX14LQwOVTLeLC",
+        "category": "HTTP",
+        "x": 425,
+        "y": 160,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "post_api",
+        "generated": true
+    },
+    {
+        "id": "sd_xLEFSP00txXGN5qs",
+        "type": "Script",
+        "z": "sd_EQTGVQPFwAVP6PGo",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.url = `http://localhost:8081/api/add-post`;",
+        "functionName": "sd_xLEFSP00txXGN5qs",
+        "category": "Function",
+        "x": 300,
+        "y": 160,
+        "wires": [
+            [
+                "sd_qCAX14LQwOVTLeLC"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "post_api",
+        "generated": true
+    }
+]

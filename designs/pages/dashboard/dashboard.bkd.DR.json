@@ -1863,13 +1863,21 @@
                                             "_key": "[inline]",
                                             "_value": "",
                                             "_type": "kv",
-                                            "_attrDef": "p"
+                                            "_attrDef": "p",
+                                            "_customAttributeFlag": "flowpicker"
                                         },
                                         {
                                             "_key": "color",
                                             "_value": "",
                                             "_type": "kv",
                                             "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "(click)",
+                                            "_value": "addPost()",
+                                            "_type": "kv",
+                                            "_attrDef": "c",
+                                            "_customAttributeFlag": "customInput"
                                         }
                                     ]
                                 },

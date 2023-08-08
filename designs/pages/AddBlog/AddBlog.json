@@ -1,0 +1,315 @@
+[
+    {
+        "id": "sd_pQNUcSyIuLmlsvxH",
+        "type": "tab",
+        "createdDate": "2023-08-07T20:30:35.268Z",
+        "label": "AddBlog",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "AddBlogComponent"
+    },
+    {
+        "id": "sd_qQ5QMOrpzijvajaJ",
+        "type": "OnInit",
+        "z": "sd_pQNUcSyIuLmlsvxH",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_qQ5QMOrpzijvajaJ",
+        "category": "Lifecycle Events",
+        "x": 45,
+        "y": 60,
+        "wires": [
+            [
+                "sd_LqH79qs0RJP1lZgG"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "AddBlogComponent"
+    },
+    {
+        "id": "sd_LqH79qs0RJP1lZgG",
+        "type": "PageVariables",
+        "z": "sd_pQNUcSyIuLmlsvxH",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "addPost",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": ""
+                }
+            }
+        ],
+        "functionName": "sd_LqH79qs0RJP1lZgG",
+        "category": "Function",
+        "x": 195,
+        "y": 60,
+        "wires": [
+            [
+                "sd_j6VYus4mqFnWey7M"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "AddBlogComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_j6VYus4mqFnWey7M",
+        "type": "UseDependency",
+        "z": "sd_pQNUcSyIuLmlsvxH",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "",
+        "propertyType": "bh",
+        "propertyGv": "bh.",
+        "alias": "",
+        "modules": [
+            {
+                "textIp": "FormGroup",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": ""
+                },
+                "injectable": false
+            },
+            {
+                "textIp": "FormControl",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": ""
+                },
+                "injectable": false
+            },
+            {
+                "textIp": "FormBuilder",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "fb"
+                },
+                "injectable": true
+            }
+        ],
+        "import_all": false,
+        "library": "@angular/forms",
+        "serviceDesignerType": "pages",
+        "functionName": "sd_j6VYus4mqFnWey7M",
+        "category": "Function",
+        "x": 320,
+        "y": 60,
+        "wires": [
+            [
+                "sd_OK6Fw9S2skWAm4FV"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "AddBlogComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_OK6Fw9S2skWAm4FV",
+        "type": "Script",
+        "z": "sd_pQNUcSyIuLmlsvxH",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.addPost = page.fb.group({\n    postTitle:['', Validators.required],\n    postContent:['', Validators.required],\n    postImage:[''],\n    postCategory: ['', Validators.required]\n});",
+        "functionName": "sd_OK6Fw9S2skWAm4FV",
+        "category": "Function",
+        "x": 465,
+        "y": 60,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "AddBlogComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_lDt0Fh7nieNJLrJm",
+        "type": "PageStart",
+        "z": "sd_pQNUcSyIuLmlsvxH",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "selectPostCategory",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "selectPostCategory",
+        "category": "General",
+        "x": 80,
+        "y": 200,
+        "wires": [
+            [
+                "sd_4XPPRQ4dRhJDIi2Y"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "AddBlogComponent"
+    },
+    {
+        "id": "sd_4XPPRQ4dRhJDIi2Y",
+        "type": "Script",
+        "z": "sd_pQNUcSyIuLmlsvxH",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.postCategory = [\n   {value: 'Games', viewValue: 'Games'},\n   {value: 'Movies', viewValue: 'Movies'},\n   {value: 'Technology', viewValue: 'Technology'},\n   {value: 'Travel', viewValue: 'Travel'}\n ];",
+        "functionName": "sd_4XPPRQ4dRhJDIi2Y",
+        "category": "Function",
+        "x": 240,
+        "y": 200,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "AddBlogComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_KtbcfxU6UoikE1m3",
+        "type": "PageStart",
+        "z": "sd_pQNUcSyIuLmlsvxH",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "post_added",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "post_added",
+        "category": "General",
+        "x": 80,
+        "y": 340,
+        "wires": [
+            [
+                "sd_DHa8m2IAvaJun04u"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "AddBlogComponent"
+    },
+    {
+        "id": "sd_DHa8m2IAvaJun04u",
+        "type": "Script",
+        "z": "sd_pQNUcSyIuLmlsvxH",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(page.addPost.value);\nbh.local.body = {\n    \"user_id\" : 1,\n    \"post_title\" : page.addPost.value.postTitle,\n    \"post_content\" : page.addPost.value.postContent,\n    \"post_category_id\" : page.addPost.value.postCategory\n}\n\nconsole.log(bh.local.body);\n",
+        "functionName": "sd_DHa8m2IAvaJun04u",
+        "category": "Function",
+        "x": 220,
+        "y": 340,
+        "wires": [
+            [
+                "sd_nWW1StLPQUsLRs2N"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "AddBlogComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_O6qoeLfQNMO1NNkE",
+        "type": "Navigation",
+        "z": "sd_pQNUcSyIuLmlsvxH",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "path": "/dashboard",
+        "functionName": "sd_O6qoeLfQNMO1NNkE",
+        "category": "Navigation",
+        "x": 485,
+        "y": 340,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "AddBlogComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_nWW1StLPQUsLRs2N",
+        "type": "PageCallService",
+        "z": "sd_pQNUcSyIuLmlsvxH",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_EQTGVQPFwAVP6PGo",
+            "type": "tab",
+            "createdDate": "2023-08-07T20:19:57.569Z",
+            "label": "post_api",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0,
+            "tabType": "client"
+        },
+        "flow": {
+            "flowId": "sd_VGx9ZUyRdPN117VL",
+            "flowName": "sd_VGx9ZUyRdPN117VL"
+        },
+        "inputVariables": [
+            {
+                "key": "body",
+                "map": true,
+                "valueType": "bh.local",
+                "value": "body"
+            }
+        ],
+        "outputMapping": [
+            {
+                "mapVarType": "local",
+                "key": "result",
+                "valueType": "bh.input",
+                "value": "result",
+                "mapVarName": "result",
+                "localVar": "bh.input.result"
+            }
+        ],
+        "serviceImportPath": "app/sd-services/post_api",
+        "startName": "sd_VGx9ZUyRdPN117VL",
+        "inputParams": [
+            "bh.local.body"
+        ],
+        "accept_bh": false,
+        "accept_csd": true,
+        "functionName": "sd_nWW1StLPQUsLRs2N",
+        "category": "General",
+        "x": 345,
+        "y": 340,
+        "wires": [
+            [
+                "sd_O6qoeLfQNMO1NNkE"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "AddBlogComponent",
+        "generated": true
+    }
+]
