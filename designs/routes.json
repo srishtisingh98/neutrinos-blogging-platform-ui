@@ -41,7 +41,7 @@
             "component": "all_latestblogsComponent"
         },
         {
-            "path": "blog",
+            "path": "blog/:post",
             "component": "blogComponent"
         },
         {

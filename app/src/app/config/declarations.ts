@@ -15,6 +15,8 @@ window['neutrinos'] = {
 };
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-getblog
+import { getblog } from '../sd-services/getblog';
 //CORE_REFERENCE_IMPORT-getblogs
 import { getblogs } from '../sd-services/getblogs';
 //CORE_REFERENCE_IMPORT-getcomments
@@ -118,6 +120,8 @@ export const appProviders = [
   },
   NAuthGuardService,
   //CORE_REFERENCE_PUSH_TO_PRO_ARRAY
+//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-getblog
+getblog,
 //CORE_REFERENCE_PUSH_TO_PRO_ARRAY-getblogs
 getblogs,
 //CORE_REFERENCE_PUSH_TO_PRO_ARRAY-getcomments
@@ -142,7 +146,7 @@ export const appRoutes = [
   { path: 'business', component: BusinessComponent },
   { path: 'sports', component: SportsComponent },
   { path: 'allblogs', component: all_latestblogsComponent },
-  { path: 'blog', component: blogComponent },
+  { path: 'blog/:post', component: blogComponent },
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];

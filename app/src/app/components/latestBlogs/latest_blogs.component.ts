@@ -77,12 +77,12 @@ export class latest_blogsComponent {
     }
   }
 
-  blog(value: any = undefined, ...others) {
+  blog(item: any = undefined, ...others) {
     try {
       var bh: any = this.__page_injector__
         .get(SDPageCommonService)
         .constructFlowObject(this);
-      bh.input = { value: value };
+      bh.input = { item: item };
       bh.local = {};
 
       bh = this.sd_4boeZGkbln7yoZCM(bh);
@@ -168,9 +168,10 @@ export class latest_blogsComponent {
   sd_4boeZGkbln7yoZCM(bh) {
     try {
       const page = this.page;
-      console.log(bh.input.value);
+      console.log('item', bh.input.item);
+      bh.local.id = bh.input.item;
 
-      bh = this.sd_7UhfCT3KHMLFNRoq(bh);
+      bh = this.sd_nLcRHFeh4qPbmFGA(bh);
       //appendnew_next_sd_4boeZGkbln7yoZCM
       return bh;
     } catch (e) {
@@ -178,15 +179,34 @@ export class latest_blogsComponent {
     }
   }
 
+  sd_nLcRHFeh4qPbmFGA(bh) {
+    try {
+      localStorage.setItem('postdata', JSON.stringify(bh.local.id));
+
+      bh = this.sd_7UhfCT3KHMLFNRoq(bh);
+      //appendnew_next_sd_nLcRHFeh4qPbmFGA
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_nLcRHFeh4qPbmFGA');
+    }
+  }
+
   async sd_7UhfCT3KHMLFNRoq(bh) {
     try {
       const { paramObj: qprm, path: path } =
-        this.sdService.getPathAndQParamsObj('/blog');
+        this.sdService.getPathAndQParamsObj('/blog/:post');
       bh.response = await this.__page_injector__
         .get(Router)
-        .navigate([this.sdService.formatPathWithParams(path, undefined)], {
-          queryParams: Object.assign(qprm, ''),
-        });
+        .navigate(
+          [
+            this.sdService.formatPathWithParams(path, {
+              post: bh.local.id.post_id,
+            }),
+          ],
+          {
+            queryParams: Object.assign(qprm, ''),
+          }
+        );
 
       //appendnew_next_sd_7UhfCT3KHMLFNRoq
       return bh;

@@ -69,7 +69,7 @@
         "y": 30,
         "wires": [
             [
-                "sd_8DOHI7xTMh1Eeuqs"
+                "sd_tSx5eIA0gXHk00Po"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -87,7 +87,7 @@
         "script": "console.log('data',bh.response)\n\nconsole.log(page.comment);\n//  page.postcomment = []\n console.log(page.postcomment);",
         "functionName": "sd_tZVVbG9k26rOqtVA",
         "category": "Function",
-        "x": 605,
+        "x": 665,
         "y": 60,
         "wires": [
             []
@@ -105,7 +105,24 @@
         "nodeType": "start",
         "name": "postcmnt",
         "outputs": 1,
-        "inputVariables": [],
+        "inputVariables": [
+            {
+                "key": "value",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            },
+            {
+                "key": "value1",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
         "localVariables": [],
         "flow_type": "sync",
         "functionName": "postcmnt",
@@ -128,7 +145,7 @@
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "console.log(page.comment);\npage.postcomment.push(page.comment);\nbh.local.body = {\n    \"post_id\":4,\n    \"user_id\":1,\n    \"comment_text\":page.comment\n}\npage.comment = '';",
+        "script": "console.log(page.comment);\nconsole.log(bh.input.value);\nconsole.log(bh.input.value1);\npage.postcomment.push(page.comment);\nbh.local.body = {\n    \"post_id\":bh.input.value,\n    \"user_id\":bh.input.value1,\n    \"comment_text\":page.comment\n}\npage.comment = '';",
         "functionName": "sd_yNT03BmTsC69AKRk",
         "category": "Function",
         "x": 285,
@@ -211,10 +228,10 @@
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "bh.local.body = {\n    \"post_id\":page.post_id\n}\nconsole.log('body',bh.local.body);",
+        "script": "console.log(page.result)\n\nbh.local.body = {\n    \"post_id\":page.result.post_id\n}\nconsole.log('body',bh.local.body);",
         "functionName": "sd_8DOHI7xTMh1Eeuqs",
         "category": "Function",
-        "x": 325,
+        "x": 425,
         "y": 60,
         "wires": [
             [
@@ -277,7 +294,7 @@
         "accept_csd": true,
         "functionName": "sd_7YdbE1fa5UJSXmM0",
         "category": "General",
-        "x": 440,
+        "x": 505,
         "y": 60,
         "wires": [
             [
@@ -299,11 +316,44 @@
         "script": "console.log(bh.input.result)\npage.postcomment = bh.input.result.comments",
         "functionName": "sd_5SVldyy24CpQLyhA",
         "category": "Function",
-        "x": 540,
+        "x": 585,
         "y": 60,
         "wires": [
             [
                 "sd_tZVVbG9k26rOqtVA"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "blogComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_tSx5eIA0gXHk00Po",
+        "type": "Storage",
+        "z": "sd_kzanf14KxJuzQ4OG",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "operationType": "getItem",
+        "storageType": "localStorage",
+        "outputs": 1,
+        "key": {
+            "type": "str",
+            "value": "postdata"
+        },
+        "value": {},
+        "resultMapping": {
+            "type": "this.page",
+            "value": "result"
+        },
+        "functionName": "sd_tSx5eIA0gXHk00Po",
+        "category": "Storage",
+        "x": 305,
+        "y": 60,
+        "wires": [
+            [
+                "sd_8DOHI7xTMh1Eeuqs"
             ]
         ],
         "__n_excludedFromValidation__": {},

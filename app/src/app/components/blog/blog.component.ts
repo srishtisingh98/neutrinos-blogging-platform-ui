@@ -62,12 +62,12 @@ export class blogComponent {
     }
   }
 
-  postcmnt(...others) {
+  postcmnt(value: any = undefined, value1: any = undefined, ...others) {
     try {
       var bh: any = this.__page_injector__
         .get(SDPageCommonService)
         .constructFlowObject(this);
-      bh.input = {};
+      bh.input = { value: value, value1: value1 };
       bh.local = {};
 
       bh = this.sd_yNT03BmTsC69AKRk(bh);
@@ -85,7 +85,7 @@ export class blogComponent {
       this.page.postcomment = undefined;
       this.page.post_id = 4;
 
-      bh = this.sd_8DOHI7xTMh1Eeuqs(bh);
+      bh = this.sd_tSx5eIA0gXHk00Po(bh);
       //appendnew_next_sd_W91vWrMOp20rteWw
       return bh;
     } catch (e) {
@@ -93,11 +93,25 @@ export class blogComponent {
     }
   }
 
+  sd_tSx5eIA0gXHk00Po(bh) {
+    try {
+      this.page.result = JSON.parse(localStorage.getItem('postdata'));
+
+      bh = this.sd_8DOHI7xTMh1Eeuqs(bh);
+      //appendnew_next_sd_tSx5eIA0gXHk00Po
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_tSx5eIA0gXHk00Po');
+    }
+  }
+
   sd_8DOHI7xTMh1Eeuqs(bh) {
     try {
       const page = this.page;
+      console.log(page.result);
+
       bh.local.body = {
-        post_id: page.post_id,
+        post_id: page.result.post_id,
       };
       console.log('body', bh.local.body);
 
@@ -161,10 +175,12 @@ export class blogComponent {
     try {
       const page = this.page;
       console.log(page.comment);
+      console.log(bh.input.value);
+      console.log(bh.input.value1);
       page.postcomment.push(page.comment);
       bh.local.body = {
-        post_id: 4,
-        user_id: 1,
+        post_id: bh.input.value,
+        user_id: bh.input.value1,
         comment_text: page.comment,
       };
       page.comment = '';

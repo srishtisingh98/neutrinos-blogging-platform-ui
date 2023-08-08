@@ -379,7 +379,7 @@ p span .cursor1{
 }
 .commentarea{
     height: 50px;
-    border: 1px solid blue;
+    border: 1px solid #dfdfdf;
     border-radius: 10px;
     padding: 3px 5px;
 }
@@ -396,7 +396,8 @@ p span .cursor1{
     padding: 10px 5px;
 }
 .blogbox{
-    border: 1px solid $primary-color;
+    // border: 1px solid black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .blog-head{
 padding: 5px;
@@ -429,8 +430,10 @@ padding: 5px;
     padding: 10px;
 }
 .commentlist{
-    background-color: #ececec;
+    background-color: rgba(208, 242, 255, 0.966);
     margin-bottom: 3px;
+    border-radius: 5px;
+    padding: 5px;
 }
 .similarblogs{
     border: 1px solid black;
@@ -439,4 +442,8 @@ padding: 5px;
 .social-interactions1{
 background-color: rgb(112, 167, 187);
 border-radius: 25px;
+padding: 10px;
 }
+// .blog-wrapper{
+//     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+// }

@@ -169,7 +169,7 @@
         "outputs": 1,
         "inputVariables": [
             {
-                "key": "value",
+                "key": "item",
                 "defaultValue": {
                     "type": "any",
                     "value": ""
@@ -199,9 +199,17 @@
         "viewType": "client-pages",
         "nodeType": "flow",
         "name": "",
-        "path": "/blog",
+        "path": "/blog/:post",
         "pathMap": "",
-        "pathparams": "",
+        "pathparams": [
+            {
+                "paramKey": "post",
+                "paramValue": {
+                    "type": "bh.local",
+                    "value": "id.post_id"
+                }
+            }
+        ],
         "pathparamsMap": "",
         "qparams": "",
         "qparamsMap": "",
@@ -212,7 +220,7 @@
         },
         "functionName": "sd_7UhfCT3KHMLFNRoq",
         "category": "Navigation",
-        "x": 345,
+        "x": 525,
         "y": 360,
         "wires": [
             []
@@ -229,14 +237,14 @@
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "console.log(bh.input.value);\n",
+        "script": "console.log('item',bh.input.item);\nbh.local.id = bh.input.item;",
         "functionName": "sd_4boeZGkbln7yoZCM",
         "category": "Function",
         "x": 225,
         "y": 360,
         "wires": [
             [
-                "sd_7UhfCT3KHMLFNRoq"
+                "sd_nLcRHFeh4qPbmFGA"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -300,6 +308,39 @@
         "wires": [
             [
                 "sd_Xs03P3ssdIT0ib1y"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "latest_blogsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_nLcRHFeh4qPbmFGA",
+        "type": "Storage",
+        "z": "sd_T4AGcBygbOez6TYH",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "operationType": "setItem",
+        "storageType": "localStorage",
+        "outputs": 1,
+        "key": {
+            "type": "str",
+            "value": "postdata"
+        },
+        "value": {
+            "type": "bh.local",
+            "value": "id"
+        },
+        "resultMapping": {},
+        "functionName": "sd_nLcRHFeh4qPbmFGA",
+        "category": "Storage",
+        "x": 345,
+        "y": 360,
+        "wires": [
+            [
+                "sd_7UhfCT3KHMLFNRoq"
             ]
         ],
         "__n_excludedFromValidation__": {},

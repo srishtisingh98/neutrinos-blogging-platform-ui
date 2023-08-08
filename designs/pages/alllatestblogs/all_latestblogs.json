@@ -23,7 +23,7 @@
         "y": 30,
         "wires": [
             [
-                "sd_tsSwHPhvvP7zN9Wt"
+                "sd_RbpeBB7xWF6jPl75"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -31,7 +31,292 @@
         "serviceName": "all_latestblogsComponent"
     },
     {
-        "id": "sd_tsSwHPhvvP7zN9Wt",
+        "id": "sd_k7qLBZyPqg1v3Ssw",
+        "type": "Script",
+        "z": "sd_3B0pjjW74ZMYRd8k",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.latestcard = bh.input.result",
+        "functionName": "sd_k7qLBZyPqg1v3Ssw",
+        "category": "Function",
+        "x": 425,
+        "y": 40,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "all_latestblogsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_1FrjOm12tyxFjf0m",
+        "type": "PageStart",
+        "z": "sd_3B0pjjW74ZMYRd8k",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "seeall",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "seeall",
+        "category": "General",
+        "x": 200,
+        "y": 180,
+        "wires": [
+            [
+                "sd_q3KCEcFqEO757sZB"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "all_latestblogsComponent"
+    },
+    {
+        "id": "sd_q3KCEcFqEO757sZB",
+        "type": "Script",
+        "z": "sd_3B0pjjW74ZMYRd8k",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log('seeall')",
+        "functionName": "sd_q3KCEcFqEO757sZB",
+        "category": "Function",
+        "x": 380,
+        "y": 180,
+        "wires": [
+            [
+                "sd_SxOu9rL2zT6Wo1Gg"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "all_latestblogsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_SxOu9rL2zT6Wo1Gg",
+        "type": "Navigation",
+        "z": "sd_3B0pjjW74ZMYRd8k",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "path": "/allblogs",
+        "pathMap": "",
+        "pathparams": "",
+        "pathparamsMap": "",
+        "qparams": "",
+        "qparamsMap": "",
+        "qparamsArray": "",
+        "resultMapping": {
+            "type": "this.page",
+            "value": "result"
+        },
+        "functionName": "sd_SxOu9rL2zT6Wo1Gg",
+        "category": "Navigation",
+        "x": 505,
+        "y": 180,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "all_latestblogsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_qSUyBoOUjfLUYsit",
+        "type": "PageStart",
+        "z": "sd_3B0pjjW74ZMYRd8k",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "blog",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "item",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "blog",
+        "category": "General",
+        "x": 290,
+        "y": 503.8000030517578,
+        "wires": [
+            [
+                "sd_Nyt390Z2NhSwcrIV"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "all_latestblogsComponent"
+    },
+    {
+        "id": "sd_tcbogg4YLwQoeeKC",
+        "type": "Navigation",
+        "z": "sd_3B0pjjW74ZMYRd8k",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "path": "/blog/:post",
+        "pathMap": "",
+        "pathparams": [
+            {
+                "paramKey": "post",
+                "paramValue": {
+                    "type": "bh.local",
+                    "value": "id.post_id"
+                }
+            }
+        ],
+        "pathparamsMap": "",
+        "qparams": "",
+        "qparamsMap": "",
+        "qparamsArray": "",
+        "resultMapping": {
+            "type": "bh",
+            "value": "response"
+        },
+        "functionName": "sd_tcbogg4YLwQoeeKC",
+        "category": "Navigation",
+        "x": 675,
+        "y": 503.8000030517578,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "all_latestblogsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_Nyt390Z2NhSwcrIV",
+        "type": "Script",
+        "z": "sd_3B0pjjW74ZMYRd8k",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log('item',bh.input.item);\nbh.local.id = bh.input.item;",
+        "functionName": "sd_Nyt390Z2NhSwcrIV",
+        "category": "Function",
+        "x": 375,
+        "y": 503.8000030517578,
+        "wires": [
+            [
+                "sd_8it3GSLhnYTczfvq"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "all_latestblogsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_Qh56K69Jioo2WUNl",
+        "type": "PageCallService",
+        "z": "sd_3B0pjjW74ZMYRd8k",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_h0Y6QWfeblUGDOXH",
+            "type": "tab",
+            "createdDate": "2023-08-07T21:19:28.521Z",
+            "label": "getblogs",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0,
+            "tabType": "client"
+        },
+        "flow": {
+            "flowId": "sd_VuG62A5wMH0xEWwr",
+            "flowName": "sd_VuG62A5wMH0xEWwr"
+        },
+        "inputVariables": [
+            {
+                "key": "body",
+                "map": true,
+                "valueType": "bh.local",
+                "value": "body"
+            }
+        ],
+        "outputMapping": [
+            {
+                "mapVarType": "local",
+                "key": "result",
+                "valueType": "bh.input",
+                "value": "result",
+                "mapVarName": "result",
+                "localVar": "bh.input.result"
+            }
+        ],
+        "serviceImportPath": "app/sd-services/getblogs",
+        "startName": "sd_VuG62A5wMH0xEWwr",
+        "inputParams": [
+            "bh.local.body"
+        ],
+        "accept_bh": false,
+        "accept_csd": true,
+        "functionName": "sd_Qh56K69Jioo2WUNl",
+        "category": "General",
+        "x": 305,
+        "y": 40,
+        "wires": [
+            [
+                "sd_k7qLBZyPqg1v3Ssw"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "all_latestblogsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_8it3GSLhnYTczfvq",
+        "type": "Storage",
+        "z": "sd_3B0pjjW74ZMYRd8k",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "operationType": "setItem",
+        "storageType": "localStorage",
+        "outputs": 1,
+        "key": {
+            "type": "str",
+            "value": "postdata"
+        },
+        "value": {
+            "type": "bh.local",
+            "value": "id"
+        },
+        "resultMapping": {},
+        "functionName": "sd_8it3GSLhnYTczfvq",
+        "category": "Storage",
+        "x": 495,
+        "y": 503.8000030517578,
+        "wires": [
+            [
+                "sd_tcbogg4YLwQoeeKC"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "all_latestblogsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_RbpeBB7xWF6jPl75",
         "type": "PageVariables",
         "z": "sd_3B0pjjW74ZMYRd8k",
         "viewType": "pages",
@@ -40,13 +325,23 @@
         "inputs": 1,
         "outputs": 1,
         "operation": "set",
-        "globalVariables": [],
-        "functionName": "sd_tsSwHPhvvP7zN9Wt",
+        "globalVariables": [
+            {
+                "textIp": "latestcard",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": ""
+                }
+            }
+        ],
+        "functionName": "sd_RbpeBB7xWF6jPl75",
         "category": "Function",
-        "x": 180,
-        "y": 30,
+        "x": 185,
+        "y": 40,
         "wires": [
-            []
+            [
+                "sd_Qh56K69Jioo2WUNl"
+            ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,

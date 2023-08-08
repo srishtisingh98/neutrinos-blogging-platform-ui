@@ -1,0 +1,15 @@
+[
+    {
+        "id": "sd_1trCoJ3xsu4weub6",
+        "type": "tab",
+        "createdDate": "2023-08-08T07:48:23.994Z",
+        "label": "getblog",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "tabType": "client",
+        "generateNext": true,
+        "serviceName": "getblog",
+        "relativeParentPath": ""
+    }
+]
