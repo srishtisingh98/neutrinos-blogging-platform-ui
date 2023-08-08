@@ -19,8 +19,8 @@
         "name": "",
         "functionName": "sd_m3RLj6RHwDCE9gyY",
         "category": "Lifecycle Events",
-        "x": 30,
-        "y": 30,
+        "x": 105,
+        "y": 40,
         "wires": [
             [
                 "sd_NEmPJzzMCwwHKQHf"
@@ -51,8 +51,8 @@
         ],
         "functionName": "sd_NEmPJzzMCwwHKQHf",
         "category": "Function",
-        "x": 180,
-        "y": 30,
+        "x": 255,
+        "y": 40,
         "wires": [
             [
                 "sd_Xs03P3ssdIT0ib1y"
@@ -73,8 +73,52 @@
         "script": "page.latestcard = new Array(4);",
         "functionName": "sd_Xs03P3ssdIT0ib1y",
         "category": "Function",
-        "x": 340,
-        "y": 60,
+        "x": 415,
+        "y": 70,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "latest_blogsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_u8PUMYoOUhefsAsA",
+        "type": "PageStart",
+        "z": "sd_T4AGcBygbOez6TYH",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "latestbloglike",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "latestbloglike",
+        "category": "General",
+        "x": 105,
+        "y": 220,
+        "wires": [
+            [
+                "sd_NdfYGdzxBH7WsoKz"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "latest_blogsComponent"
+    },
+    {
+        "id": "sd_NdfYGdzxBH7WsoKz",
+        "type": "Script",
+        "z": "sd_T4AGcBygbOez6TYH",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(\"latest blog like-check\");\nif(page.count==0){\n    page.count=1;\n    page.status=true;\n}else{\n    page.status=false;\n    page.count=0;\n}",
+        "functionName": "sd_NdfYGdzxBH7WsoKz",
+        "category": "Function",
+        "x": 225,
+        "y": 220,
         "wires": [
             []
         ],

@@ -60,6 +60,21 @@ export class latest_blogsComponent {
     }
   }
 
+  latestbloglike(...others) {
+    try {
+      var bh: any = this.__page_injector__
+        .get(SDPageCommonService)
+        .constructFlowObject(this);
+      bh.input = {};
+      bh.local = {};
+
+      bh = this.sd_NdfYGdzxBH7WsoKz(bh);
+      //appendnew_next_latestbloglike
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_u8PUMYoOUhefsAsA');
+    }
+  }
+
   //appendnew_flow_latest_blogsComponent_start
 
   sd_NEmPJzzMCwwHKQHf(bh) {
@@ -83,6 +98,25 @@ export class latest_blogsComponent {
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_Xs03P3ssdIT0ib1y');
+    }
+  }
+
+  sd_NdfYGdzxBH7WsoKz(bh) {
+    try {
+      const page = this.page;
+      console.log('latest blog like-check');
+      if (page.count == 0) {
+        page.count = 1;
+        page.status = true;
+      } else {
+        page.status = false;
+        page.count = 0;
+      }
+
+      //appendnew_next_sd_NdfYGdzxBH7WsoKz
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_NdfYGdzxBH7WsoKz');
     }
   }
 

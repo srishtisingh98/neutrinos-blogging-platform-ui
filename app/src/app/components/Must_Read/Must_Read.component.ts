@@ -60,11 +60,27 @@ export class Must_ReadComponent {
     }
   }
 
+  mustreadlike(...others) {
+    try {
+      var bh: any = this.__page_injector__
+        .get(SDPageCommonService)
+        .constructFlowObject(this);
+      bh.input = {};
+      bh.local = {};
+
+      bh = this.sd_kCjq3xqPuMS84FTh(bh);
+      //appendnew_next_mustreadlike
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_9qWGu5PRZERitUCz');
+    }
+  }
+
   //appendnew_flow_Must_ReadComponent_start
 
   sd_LOnOdpIli7KlulTF(bh) {
     try {
       this.page.latestcard = undefined;
+      this.page.count = undefined;
 
       bh = this.sd_9kX5tB9QxG5fmhaJ(bh);
       //appendnew_next_sd_LOnOdpIli7KlulTF
@@ -83,6 +99,25 @@ export class Must_ReadComponent {
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_9kX5tB9QxG5fmhaJ');
+    }
+  }
+
+  sd_kCjq3xqPuMS84FTh(bh) {
+    try {
+      const page = this.page;
+      console.log('must-read-check');
+      if (page.count == 0) {
+        page.count = 1;
+        page.status = true;
+      } else {
+        page.status = false;
+        page.count = 0;
+      }
+
+      //appendnew_next_sd_kCjq3xqPuMS84FTh
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_kCjq3xqPuMS84FTh');
     }
   }
 

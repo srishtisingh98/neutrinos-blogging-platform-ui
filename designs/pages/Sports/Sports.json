@@ -47,6 +47,13 @@
                     "type": "this.page",
                     "value": ""
                 }
+            },
+            {
+                "textIp": "status",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "false"
+                }
             }
         ],
         "functionName": "sd_zG2Y7OAA8gnkB9dm",
@@ -75,6 +82,50 @@
         "category": "Function",
         "x": 495,
         "y": 70,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "SportsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_Z36TCCk0ee8Tr5ll",
+        "type": "PageStart",
+        "z": "sd_KoZEia8uk9qi7uvk",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "sportslike",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "sportslike",
+        "category": "General",
+        "x": 200,
+        "y": 220,
+        "wires": [
+            [
+                "sd_DBOuD8RwiUf3vEOD"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "SportsComponent"
+    },
+    {
+        "id": "sd_DBOuD8RwiUf3vEOD",
+        "type": "Script",
+        "z": "sd_KoZEia8uk9qi7uvk",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(\"sports-check\");\n// page.count=0;\n// for(let count=0;count<=0;count++){\n//     page.count=page.count+1;\n//     return page.count;\n// }\nif(page.count==0){\n    page.count=1;\n    page.status=true;\n}else{\n    page.status=false;\n    page.count=0;\n}\n",
+        "functionName": "sd_DBOuD8RwiUf3vEOD",
+        "category": "Function",
+        "x": 320,
+        "y": 220,
         "wires": [
             []
         ],

@@ -23,6 +23,7 @@
         "card",
         "card-img-box",
         "card-heading",
+        "padding-5-15",
         "social-interactions",
         "side-headings",
         "ml-10",
@@ -46,6 +47,7 @@
         "cursor",
         "text-black",
         "header-bg",
+        "margin-3",
         "profile-icon-bg",
         "profile-img",
         "bg-grey",
@@ -65,6 +67,7 @@
         "blogging-logo",
         "footer-text",
         "cursor1",
-        "color-black"
+        "color-black",
+        "likedisplay"
     ]
 }
