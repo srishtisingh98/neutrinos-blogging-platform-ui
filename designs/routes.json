@@ -45,6 +45,10 @@
             "component": "blogComponent"
         },
         {
+            "path": "AddBlog",
+            "component": "AddBlogComponent"
+        },
+        {
             "path": "''",
             "redirectTo": "dashboard",
             "pathMatch": "full",

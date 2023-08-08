@@ -81,6 +81,8 @@
         "p-10",
         "commentlist",
         "similarblogs",
-        "social-interactions1"
+        "social-interactions1",
+        "add-blog",
+        "mat-form-field"
     ]
 }

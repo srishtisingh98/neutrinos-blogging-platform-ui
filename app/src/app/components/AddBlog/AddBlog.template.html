@@ -1,0 +1,26 @@
+<div fxLayout="column wrap" class="add-blog width-100" fxLayoutAlign="start center" [fxShow]="true">
+  <h2>
+    Create a new Blog</h2>
+  <form [formGroup]="page.addPost">
+    <div fxLayout="row wrap" class="width-100" fxLayoutAlign="start stretch" [fxShow]="true">
+      <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+        <input matInput placeholder="Enter Blog Title" [required]="true" formControlName="postTitle">
+        <mat-label>Enter Blog Title</mat-label>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row wrap" class="width-100" fxLayoutAlign="start stretch" [fxShow]="true">
+      <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+        <input matInput placeholder="Enter Blog Content" [required]="true" formControlName="postContent">
+        <mat-label>Enter Blog Content</mat-label>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row wrap" class="width-100" fxLayoutAlign="start stretch" [fxShow]="true"><mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+        <mat-label>Select Category</mat-label>
+        <mat-select formControlName="postCategory" placeholder="Select Category" [required]="false">
+          <mat-option [value]="&apos;Travel&apos;" disabled="false">Travel</mat-option><mat-option [value]="&apos;Games&apos;" disabled="false">Games</mat-option><mat-option [value]="&apos;Movies&apos;" disabled="false">Movies</mat-option><mat-option [value]="&apos;Technology&apos;" disabled="false">Technology</mat-option>
+        </mat-select>
+
+      </mat-form-field></div>
+    <div fxLayout="row wrap" class="width-100" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button color="primary" (click)="post_added()" type="submit">Add Post</button></div>
+  </form>
+</div>

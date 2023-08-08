@@ -14,6 +14,7 @@ import { SDPageCommonService } from 'app/n-services/sd-page-common.service'; //_
 import { __NEU_ServiceInvokerService__ } from 'app/n-services/service-caller.service'; //_splitter_
 import { MatDialog } from '@angular/material/dialog'; //_splitter_
 import { loginComponent } from 'app/components/login/login.component'; //_splitter_
+import { AddBlogComponent } from 'app/components/AddBlog/AddBlog.component'; //_splitter_
 //append_imports_end
 
 @Component({
@@ -77,6 +78,21 @@ export class dashboardComponent {
     }
   }
 
+  addPost(...others) {
+    try {
+      var bh: any = this.__page_injector__
+        .get(SDPageCommonService)
+        .constructFlowObject(this);
+      bh.input = {};
+      bh.local = {};
+
+      bh = this.sd_sCHyFD4c30xuHoDv(bh);
+      //appendnew_next_addPost
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_Wo7o8IcB0lMMLCZN');
+    }
+  }
+
   //appendnew_flow_dashboardComponent_start
 
   sd_ww3tAyD8A2TLCZm2(bh) {
@@ -128,6 +144,37 @@ export class dashboardComponent {
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_iLizAMju5Egklz7X');
+    }
+  }
+
+  sd_sCHyFD4c30xuHoDv(bh) {
+    try {
+      const page = this.page;
+      console.log('add post dialogue box');
+
+      bh = this.sd_8YJyeGlcpuEcloF2(bh);
+      //appendnew_next_sd_sCHyFD4c30xuHoDv
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_sCHyFD4c30xuHoDv');
+    }
+  }
+
+  sd_8YJyeGlcpuEcloF2(bh) {
+    try {
+      const AddBlogDialog = this.__page_injector__.get(MatDialog);
+      const AddBlogDialogRef = AddBlogDialog.open(AddBlogComponent, {
+        autoFocus: false,
+        closeOnNavigation: true,
+        data: this.page.data,
+        disableClose: false,
+        hasBackdrop: true,
+        width: '400px',
+      });
+
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_8YJyeGlcpuEcloF2');
     }
   }
 
