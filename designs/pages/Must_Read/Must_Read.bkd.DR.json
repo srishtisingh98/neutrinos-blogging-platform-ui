@@ -1514,7 +1514,7 @@
                             "_attrDef": "p"
                         }
                     ],
-                    "66bd7f4e-3d60-720c-470d-60ccf0e41660": {
+                    "16648901-5686-0692-eea8-94f0e5065882": {
                         "paletteKey": "NG-icon",
                         "parentEditorKey": "5f955b02-c831-cb07-9f1b-5316b17c7f30",
                         "commentid": null,
@@ -1559,7 +1559,7 @@
                             }
                         ]
                     },
-                    "668b44ff-75fe-ab1b-b31c-a2f6d619734e": {
+                    "e174017f-9038-0e0a-519b-ff916ab39325": {
                         "paletteKey": "Html5",
                         "parentEditorKey": "5f955b02-c831-cb07-9f1b-5316b17c7f30",
                         "isAdvancedComponent": true,
@@ -1744,11 +1744,17 @@
                                 "_type": "kv",
                                 "_attrDef": "p",
                                 "_visibility": false
+                            },
+                            {
+                                "_key": "[fxShow]",
+                                "_value": "page.status",
+                                "_type": "kv",
+                                "_attrDef": "c"
                             }
                         ],
-                        "23ac3269-5530-7041-ff97-412de063367d": {
+                        "a0853a1a-a00e-b3f9-f924-f408b0cf62e9": {
                             "paletteKey": "html-editor",
-                            "parentEditorKey": "668b44ff-75fe-ab1b-b31c-a2f6d619734e",
+                            "parentEditorKey": "e174017f-9038-0e0a-519b-ff916ab39325",
                             "isAdvancedChildComponent": true,
                             "commentid": null,
                             "designerReference": [
@@ -1766,7 +1772,7 @@
                                 },
                                 {
                                     "_key": "html",
-                                    "_value": "{{page.count}}",
+                                    "_value": "{{page.count}} likes",
                                     "_type": "a",
                                     "_attrDef": "p"
                                 }

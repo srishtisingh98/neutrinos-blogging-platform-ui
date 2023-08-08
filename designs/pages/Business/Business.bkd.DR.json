@@ -1514,7 +1514,7 @@
                             "_attrDef": "p"
                         }
                     ],
-                    "3e01bc57-cf01-e3f4-bb39-f3007e690700": {
+                    "689ef43a-b696-0caa-0f70-92b65a96cf09": {
                         "paletteKey": "NG-icon",
                         "parentEditorKey": "4e851b15-4941-630c-d805-ee78d78137e1",
                         "commentid": null,
@@ -1559,7 +1559,7 @@
                             }
                         ]
                     },
-                    "0eeaf086-3605-5d7d-1137-24ca9bc43c04": {
+                    "5f1e67b4-9658-641b-8ffb-8f7c776944eb": {
                         "paletteKey": "Html5",
                         "parentEditorKey": "4e851b15-4941-630c-d805-ee78d78137e1",
                         "isAdvancedComponent": true,
@@ -1579,14 +1579,14 @@
                             },
                             {
                                 "_key": "htmlElement",
-                                "_value": "span",
+                                "_value": "div",
                                 "_type": "dav",
                                 "_attrDef": "p",
                                 "_useAsLabel": true
                             },
                             {
                                 "_key": "tagType",
-                                "_value": "span",
+                                "_value": "div",
                                 "_type": "a",
                                 "_attrDef": "p",
                                 "_visibility": false
@@ -1744,11 +1744,17 @@
                                 "_type": "kv",
                                 "_attrDef": "p",
                                 "_visibility": false
+                            },
+                            {
+                                "_key": "[fxShow]",
+                                "_value": "page.status",
+                                "_type": "kv",
+                                "_attrDef": "c"
                             }
                         ],
-                        "55391713-ee78-8fe7-ff16-59f23d7cd61a": {
+                        "b92c1c31-c046-669e-b8f0-4be56d7559ee": {
                             "paletteKey": "html-editor",
-                            "parentEditorKey": "0eeaf086-3605-5d7d-1137-24ca9bc43c04",
+                            "parentEditorKey": "5f1e67b4-9658-641b-8ffb-8f7c776944eb",
                             "isAdvancedChildComponent": true,
                             "commentid": null,
                             "designerReference": [
@@ -1766,7 +1772,7 @@
                                 },
                                 {
                                     "_key": "html",
-                                    "_value": "{{page.count}}",
+                                    "_value": "{{page.count}} likes",
                                     "_type": "a",
                                     "_attrDef": "p"
                                 }

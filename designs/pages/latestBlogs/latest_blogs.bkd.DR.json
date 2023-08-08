@@ -1741,6 +1741,12 @@
                                 "_type": "kv",
                                 "_attrDef": "p",
                                 "_visibility": false
+                            },
+                            {
+                                "_key": "[fxShow]",
+                                "_value": "page.status",
+                                "_type": "kv",
+                                "_attrDef": "c"
                             }
                         ],
                         "647bf5c4-0dc8-8604-eb0d-8b8907c4b646": {
@@ -1763,7 +1769,7 @@
                                 },
                                 {
                                     "_key": "html",
-                                    "_value": "{{page.count}} likes for the post",
+                                    "_value": "{{page.count}} likes",
                                     "_type": "a",
                                     "_attrDef": "p"
                                 }

@@ -1514,7 +1514,7 @@
                             "_attrDef": "p"
                         }
                     ],
-                    "71fa9b37-24bc-f64c-e1bf-e05d54a27a80": {
+                    "44ccedf0-5ddd-0269-0885-b40689e8583f": {
                         "paletteKey": "NG-icon",
                         "parentEditorKey": "8ad3fb1f-1c9a-2fb1-6354-f71adabe464b",
                         "commentid": null,
@@ -1559,7 +1559,7 @@
                             }
                         ]
                     },
-                    "a86795e4-95e5-d8f0-54d9-c87d2b9f2e80": {
+                    "a7a87f89-2f94-052a-08ef-982497ebafad": {
                         "paletteKey": "Html5",
                         "parentEditorKey": "8ad3fb1f-1c9a-2fb1-6354-f71adabe464b",
                         "isAdvancedComponent": true,
@@ -1573,22 +1573,20 @@
                             },
                             {
                                 "_key": "class",
-                                "_value": [
-                                    "margin-3"
-                                ],
+                                "_value": "",
                                 "_type": "dav",
                                 "_attrDef": "p"
                             },
                             {
                                 "_key": "htmlElement",
-                                "_value": "span",
+                                "_value": "div",
                                 "_type": "dav",
                                 "_attrDef": "p",
                                 "_useAsLabel": true
                             },
                             {
                                 "_key": "tagType",
-                                "_value": "span",
+                                "_value": "div",
                                 "_type": "a",
                                 "_attrDef": "p",
                                 "_visibility": false
@@ -1746,11 +1744,17 @@
                                 "_type": "kv",
                                 "_attrDef": "p",
                                 "_visibility": false
+                            },
+                            {
+                                "_key": "[fxShow]",
+                                "_value": "page.status",
+                                "_type": "kv",
+                                "_attrDef": "c"
                             }
                         ],
-                        "0bcf8397-2e4c-49bd-7643-641ed050676a": {
+                        "64cd5a34-8539-db71-2160-df9913d84476": {
                             "paletteKey": "html-editor",
-                            "parentEditorKey": "a86795e4-95e5-d8f0-54d9-c87d2b9f2e80",
+                            "parentEditorKey": "a7a87f89-2f94-052a-08ef-982497ebafad",
                             "isAdvancedChildComponent": true,
                             "commentid": null,
                             "designerReference": [
@@ -1768,7 +1772,7 @@
                                 },
                                 {
                                     "_key": "html",
-                                    "_value": "{{page.count}}",
+                                    "_value": "{{page.count}} likes",
                                     "_type": "a",
                                     "_attrDef": "p"
                                 }
